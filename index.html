@@ -83,37 +83,46 @@ section{padding:clamp(3rem,7vw,5.5rem) 0;position:relative}
   display:flex;align-items:center;
   padding:5rem 0 4rem;
   overflow:hidden;
-  isolation:isolate;
+  background-color:#0a121c;
 }
-/* Photo en fond plein écran */
+/* Photo en fond plein écran : position absolute avec z-index positif bas */
 .hero-img{
-  position:absolute;inset:0;z-index:-2;
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  z-index:0;
   overflow:hidden;
 }
 .hero-img img{
   width:100%;height:100%;
   object-fit:cover;
-  object-position:center 35%;
+  object-position:center 40%;
   display:block;
 }
-/* Overlay sombre pour lisibilité du texte — dégradé plus subtil à droite pour voir la photo */
+/* Overlay sombre par-dessus la photo, en dessous du texte */
 .hero-overlay{
-  position:absolute;inset:0;z-index:-1;
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  z-index:1;
   background:
     linear-gradient(90deg, rgba(10,18,28,.88) 0%, rgba(10,18,28,.72) 35%, rgba(10,18,28,.4) 65%, rgba(10,18,28,.2) 100%),
     linear-gradient(180deg, rgba(10,18,28,.15) 0%, rgba(10,18,28,.65) 100%);
 }
-/* Mobile : overlay plus sombre + positionnement photo sur visages */
+/* Mobile : overlay plus sombre */
 @media(max-width:768px){
   .hero{min-height:auto;padding:3rem 0 2.5rem}
   .hero-overlay{
     background:
-      linear-gradient(180deg, rgba(10,18,28,.4) 0%, rgba(10,18,28,.75) 45%, rgba(10,18,28,.92) 100%);
+      linear-gradient(180deg, rgba(10,18,28,.45) 0%, rgba(10,18,28,.75) 45%, rgba(10,18,28,.92) 100%);
   }
   .hero-img img{object-position:center 30%}
 }
-.hero-stripe{position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,transparent,var(--gold) 30%,var(--gold) 70%,transparent);opacity:.6;z-index:1}
-.hero .wrap{position:relative;z-index:2}
+.hero-stripe{
+  position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(to bottom,transparent,var(--gold) 30%,var(--gold) 70%,transparent);
+  opacity:.6;z-index:2;
+}
+/* Contenu texte AU-DESSUS de tout */
+.hero .wrap{position:relative;z-index:3}
 
 .hero-eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:rgba(232,197,71,0.08);border:1px solid var(--gold-border);color:var(--gold);font-size:.7rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:.4rem 1rem;border-radius:100px;margin-bottom:1rem;font-family:'DM Sans',sans-serif}
 .hero-eyebrow::before{content:"";width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}
@@ -215,12 +224,41 @@ section{padding:clamp(3rem,7vw,5.5rem) 0;position:relative}
 .testim-proof img{width:100%;height:auto;display:block;border-radius:var(--radius)}
 .testim-proof-caption{text-align:center;margin-top:.85rem;color:var(--text-dim);font-size:.88rem;font-style:italic}
 
+/* VIDÉOS TÉMOIGNAGES PORTRAIT — 1 colonne mobile, 2 côte-à-côte desktop */
+.testim-videos{
+  display:grid;grid-template-columns:1fr;gap:1rem;
+  max-width:820px;margin:0 auto 2.5rem;
+}
+@media(min-width:768px){.testim-videos{grid-template-columns:1fr 1fr;gap:1.25rem}}
+.testim-video{
+  position:relative;background:#000;border-radius:var(--radius);
+  overflow:hidden;border:1px solid var(--border);
+  aspect-ratio:9/16;max-height:640px;margin:0 auto;width:100%;max-width:360px;
+}
+.testim-video video{
+  width:100%;height:100%;display:block;
+  object-fit:contain;background:#000;
+}
+.testim-videos-caption{
+  text-align:center;margin-bottom:2.5rem;color:var(--text-dim);font-size:.88rem;font-style:italic;
+}
+.testim-videos-caption::before{content:"▶ ";color:var(--gold)}
+
+/* VIDÉO MÉTHODE (paysage, sous la grille habitudes de vie) */
+.method-video{
+  max-width:720px;margin:2.5rem auto 0;
+  border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);
+  background:#000;aspect-ratio:16/9;
+}
+.method-video video{width:100%;height:100%;display:block;object-fit:contain;background:#000}
+
 .testim-banner{text-align:center;padding:1.1rem 1.4rem;background:var(--gold-soft);border:1px solid var(--gold-border);border-radius:var(--radius);margin-bottom:2.5rem;font-size:.95rem;color:var(--text);letter-spacing:.01em}
 .testim-banner strong{color:var(--gold)}
 
-/* 1 colonne sur mobile, 3 sur desktop */
+/* 1 colonne sur mobile, 2 sur desktop moyen, 4 sur très grand écran */
 .testim-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;margin-bottom:3rem}
-@media(min-width:900px){.testim-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:768px){.testim-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1200px){.testim-grid{grid-template-columns:repeat(4,1fr);gap:1rem}}
 .testim-card{background:var(--bg-card);padding:1.75rem;border-radius:var(--radius);border:1px solid var(--border);display:flex;flex-direction:column}
 .testim-header{display:flex;align-items:center;gap:.9rem;margin-bottom:1rem}
 .testim-avatar{width:48px;height:48px;border-radius:50%;background:var(--gold);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:1.3rem;flex-shrink:0}
@@ -497,6 +535,23 @@ footer p{margin-bottom:.5rem}
       <p class="testim-proof-caption">Transformations réelles · Clientes StrongStudio Kourou</p>
     </div>
 
+    <!-- VIDÉOS TÉMOIGNAGES PORTRAIT -->
+    <div class="testim-videos">
+      <div class="testim-video">
+        <video controls preload="metadata" playsinline>
+          <source src="https://da32ev14kd4yl.cloudfront.net/versioned/martini-pierre-antoine/videos/copy_D0F106B5-26F3-4E43-B224-632C438ACDF2.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+      </div>
+      <div class="testim-video">
+        <video controls preload="metadata" playsinline>
+          <source src="https://da32ev14kd4yl.cloudfront.net/versioned/martini-pierre-antoine/videos/InShot_20260205_142215405.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+      </div>
+    </div>
+    <p class="testim-videos-caption">Témoignages vidéos · Clientes StrongStudio Kourou</p>
+
     <div class="testim-banner"><strong>Résultats moyens constatés :</strong> −5 à −10 kg · Douleurs réduites · Énergie retrouvée · Sommeil amélioré</div>
 
     <div class="testim-grid">
@@ -514,6 +569,11 @@ footer p{margin-bottom:.5rem}
         <div class="testim-header"><div class="testim-avatar">L</div><div><div class="testim-name">Laurent</div><div class="testim-meta">55 ans · Pharmacien</div></div></div>
         <p class="testim-quote">"Au bout de 2 ans j'avais un acquis dans la régularité. Je viens de faire 33 km de randonnée à Saül en 2 jours. Je souffre beaucoup moins qu'il y a 10 ans, quand je faisais 10 kg de plus."</p>
         <div class="testim-result">✓ 33 km randonnée · −10 kg · Autonome 2 ans après</div>
+      </div>
+      <div class="testim-card">
+        <div class="testim-header"><div class="testim-avatar" style="background:#A78BFA">L</div><div><div class="testim-name">Lu-Anna</div><div class="testim-meta">50 ans · Responsable logistique CNES</div></div></div>
+        <p class="testim-quote">"J'ai eu des résultats au bout de quelques mois et le changement physique c'était vraiment visible. Faire du sport régulièrement surtout les jours où je venais le matin m'a reboosté pour la journée. J'ai une hygiène de vie plus stable et moins dangereuse pour ma santé physique."</p>
+        <div class="testim-result" style="color:#A78BFA">✓ Changement physique visible · Énergie retrouvée · Hygiène transformée</div>
       </div>
     </div>
 
@@ -561,6 +621,14 @@ footer p{margin-bottom:.5rem}
         <div class="bilan-item"><span class="num">03</span><h4>Mesures objectives</h4><p>Composition corporelle, poids, masse musculaire</p></div>
         <div class="bilan-item"><span class="num">04</span><h4>Bilan biologique</h4><p>Si nécessaire, avec professionnel partenaire</p></div>
       </div>
+    </div>
+
+    <!-- VIDÉO MÉTHODE -->
+    <div class="method-video">
+      <video controls preload="metadata" playsinline poster="_PRO1686-Modifier.jpg">
+        <source src="https://da32ev14kd4yl.cloudfront.net/versioned/martini-pierre-antoine/videos/InShot_20251028_150800897.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
     </div>
 
     <!-- Galerie 2 colonnes mobile, 3 desktop -->
