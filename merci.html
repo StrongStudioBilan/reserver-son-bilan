@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merci — Votre bilan StrongStudio est réservé</title>
+<meta name="description" content="Votre demande de bilan offert est bien reçue. Pierre-Antoine vous recontacte sous 24h. Accédez dès maintenant à votre guide complet.">
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Meta Pixel — Conversion Lead -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1152376082444766');
+fbq('track', 'PageView');
+fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1152376082444766&ev=Lead&noscript=1"/></noscript>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+
+:root{
+  --bg:#0D1B2A;--bg-alt:#0a1521;--bg-card:#122536;
+  --gold:#E8C547;--gold-soft:rgba(232,197,71,.12);--gold-border:rgba(232,197,71,.3);
+  --text:#EAEEF2;--text-dim:#A8B4BF;--text-mute:#6C7A88;
+  --border:rgba(234,238,242,.08);--border-strong:rgba(234,238,242,.15);
+  --shadow:0 20px 60px rgba(0,0,0,.4);
+  --radius:6px;
+}
+
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:16px;min-height:100vh;display:flex;flex-direction:column}
+
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.03;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' seed='5'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+h1,h2,h3{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spacing:.02em;line-height:1.05}
+h1{font-size:clamp(2.2rem,5.5vw,3.8rem);color:#fff}
+h1 em{color:var(--gold);font-style:normal}
+h2{font-size:clamp(1.5rem,3.5vw,2.2rem);color:var(--gold)}
+h3{font-size:clamp(1.1rem,2.3vw,1.4rem);color:#fff}
+
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* HEADER minimaliste */
+.header{border-bottom:1px solid var(--border);padding:1rem 1.25rem;position:relative;z-index:2}
+.header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.15em;color:#fff}
+.logo span{color:var(--gold)}
+.header-tag{color:var(--text-dim);font-size:.85rem}
+@media(max-width:640px){.header-tag{display:none}}
+
+/* MAIN */
+main{flex:1;padding:clamp(2rem,6vw,4rem) 1.25rem;position:relative;z-index:2}
+.wrap{max-width:720px;margin:0 auto}
+
+/* CONFIRMATION HERO */
+.confirm{text-align:center;margin-bottom:3rem}
+.check-circle{
+  width:96px;height:96px;border-radius:50%;
+  background:var(--gold);color:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 1.5rem;
+  font-size:2.8rem;font-weight:700;
+  box-shadow:0 0 0 8px rgba(232,197,71,.15),var(--shadow);
+  animation:check-pop .6s cubic-bezier(.34,1.56,.64,1) forwards;
+  transform:scale(0);
+}
+@keyframes check-pop{to{transform:scale(1)}}
+
+.confirm-eyebrow{
+  display:inline-block;color:var(--gold);font-size:.72rem;font-weight:700;
+  letter-spacing:.22em;text-transform:uppercase;margin-bottom:1rem;
+  padding:.4rem 1rem;background:var(--gold-soft);border:1px solid var(--gold-border);
+  border-radius:100px;
+}
+.confirm h1{margin-bottom:1rem}
+.confirm-rule{width:60px;height:3px;background:var(--gold);margin:1.25rem auto 1.5rem}
+.confirm-lead{color:var(--text-dim);font-size:clamp(1rem,2vw,1.15rem);max-width:540px;margin:0 auto}
+.confirm-lead strong{color:var(--text)}
+
+/* CADEAUX BLOC */
+.gifts-block{
+  background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:clamp(1.5rem,4vw,2.5rem);margin-bottom:2.5rem;
+  box-shadow:var(--shadow);
+}
+.gifts-block-header{text-align:center;margin-bottom:2rem}
+.gifts-block-header .gift-icon{font-size:2rem;margin-bottom:.5rem;display:block}
+.gifts-block h2{margin-bottom:.5rem}
+.gifts-block-sub{color:var(--text-dim);font-size:.95rem}
+
+.gift-item{
+  display:flex;align-items:center;gap:1rem;
+  background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1rem 1.25rem;margin-bottom:.9rem;
+  transition:border-color .2s,transform .2s;
+}
+.gift-item:last-child{margin-bottom:0}
+.gift-item:hover{border-color:var(--gold-border);transform:translateY(-1px)}
+.gift-num{
+  flex-shrink:0;width:40px;height:40px;border-radius:50%;
+  background:var(--gold-soft);border:1px solid var(--gold-border);
+  color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.2rem;
+  display:flex;align-items:center;justify-content:center;
+}
+.gift-info{flex:1;min-width:0}
+.gift-info h3{font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:.15rem;letter-spacing:0;line-height:1.3}
+.gift-info p{color:var(--text-dim);font-size:.85rem;line-height:1.4}
+.gift-btn{
+  flex-shrink:0;padding:.6rem 1.1rem;background:var(--gold);color:var(--bg);
+  font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:700;
+  border-radius:var(--radius);white-space:nowrap;transition:background .2s,transform .2s;
+  text-decoration:none;
+}
+.gift-btn:hover{background:#f5d267;transform:translateY(-1px);text-decoration:none}
+@media(max-width:560px){
+  .gift-item{flex-wrap:wrap}
+  .gift-btn{width:100%;text-align:center;margin-top:.5rem}
+}
+
+/* NEXT STEPS */
+.steps{margin-bottom:2.5rem}
+.steps h2{text-align:center;margin-bottom:1.75rem}
+.step{
+  display:flex;gap:1.25rem;padding:1.25rem;
+  background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--gold);
+  border-radius:var(--radius);margin-bottom:.85rem;
+}
+.step:last-child{margin-bottom:0}
+.step-num{
+  font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);
+  line-height:1;flex-shrink:0;min-width:40px;
+}
+.step-content h3{font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:.3rem;letter-spacing:0;line-height:1.3}
+.step-content p{color:var(--text-dim);font-size:.92rem;line-height:1.5}
+.step-content p strong{color:var(--text)}
+
+/* COACH CARD */
+.coach-card{
+  background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.75rem;text-align:center;margin-bottom:2rem;
+}
+.coach-img{
+  width:96px;height:96px;border-radius:50%;object-fit:cover;object-position:center top;
+  border:3px solid var(--gold);margin:0 auto 1rem;display:block;
+}
+.coach-card .coach-name{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:#fff;letter-spacing:.04em;margin-bottom:.2rem}
+.coach-card .coach-role{color:var(--gold);font-size:.82rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;margin-bottom:1rem}
+.coach-card .coach-msg{color:var(--text-dim);font-size:.95rem;line-height:1.6;font-style:italic;max-width:420px;margin:0 auto}
+
+/* CONTACT QUICK */
+.quick-contact{text-align:center;padding:1.5rem 1rem;background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:2rem;border-radius:var(--radius)}
+.quick-contact-title{font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.1rem;letter-spacing:.1em;margin-bottom:1rem;text-transform:uppercase}
+.quick-contact-grid{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap}
+.quick-link{color:var(--text);font-size:.95rem;display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1rem;border:1px solid var(--border-strong);border-radius:var(--radius);transition:border-color .2s,color .2s;text-decoration:none}
+.quick-link:hover{border-color:var(--gold);color:var(--gold);text-decoration:none}
+.quick-link-icon{color:var(--gold);font-size:1.1rem}
+
+/* BACK LINK */
+.back-link{text-align:center;margin-bottom:2rem}
+.back-link a{color:var(--text-mute);font-size:.85rem;border-bottom:1px dotted var(--text-mute)}
+.back-link a:hover{color:var(--gold);border-color:var(--gold);text-decoration:none}
+
+/* FOOTER */
+footer{padding:1.5rem 1.25rem;border-top:1px solid var(--border);text-align:center;color:var(--text-mute);font-size:.8rem;position:relative;z-index:2}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">STRONG<span>STUDIO</span></div>
+    <div class="header-tag">Bilan offert · Sans engagement</div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <!-- HERO CONFIRMATION -->
+    <section class="confirm">
+      <div class="check-circle">✓</div>
+      <div class="confirm-eyebrow">● Inscription confirmée</div>
+      <h1>Votre bilan est <em>réservé</em>.</h1>
+      <div class="confirm-rule"></div>
+      <p class="confirm-lead">
+        Merci pour votre confiance. <strong>Pierre-Antoine vous recontacte personnellement sous 24 heures</strong> pour fixer votre créneau.
+      </p>
+    </section>
+
+    <!-- CADEAUX -->
+    <section class="gifts-block">
+      <div class="gifts-block-header">
+        <span class="gift-icon">🎁</span>
+        <h2>Votre guide complet</h2>
+        <p class="gifts-block-sub">Guide Débuter l'Entraînement + 3 modules Fondations, réunis dans un espace en ligne unique. Consultable partout, mis à jour régulièrement.</p>
+      </div>
+
+      <div class="gift-item">
+        <div class="gift-num">01</div>
+        <div class="gift-info">
+          <h3>Guide Débuter + 3 modules Fondations</h3>
+          <p>2 séances complètes, recomposition corporelle, sommeil, nutrition, récupération — tout dans un espace en ligne unique.</p>
+        </div>
+        <a href="mon-guide-complet/" class="gift-btn" onclick="if(typeof fbq!=='undefined')fbq('track','Lead',{content_name:'Guide Complet Access'})">→ Accéder à mon guide complet</a>
+      </div>
+
+      <!-- Message favoris UX complet -->
+      <div style="background:var(--gold-soft);border:1px solid var(--gold-border);border-radius:var(--radius);padding:.9rem 1.15rem;margin:1rem 0 1.5rem;font-size:.88rem;color:var(--text-dim);line-height:1.55">
+        💾 <strong style="color:var(--text)">Ajoutez cette page à vos favoris pour y revenir facilement</strong> — <code style="background:var(--bg);padding:.1rem .4rem;border-radius:3px;font-size:.82rem">Ctrl+D</code> (Windows) · <code style="background:var(--bg);padding:.1rem .4rem;border-radius:3px;font-size:.82rem">⌘+D</code> (Mac) · icône ⭐ dans votre navigateur (mobile).
+      </div>
+
+      <div class="gift-item">
+        <div class="gift-num">02</div>
+        <div class="gift-info">
+          <h3>Consultation 40 min — Bientôt</h3>
+          <p>Pierre-Antoine vous contacte sous 24h pour fixer la date en studio.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COACH MESSAGE -->
+    <section class="coach-card">
+      <img class="coach-img" src="https://da32ev14kd4yl.cloudfront.net/versioned/martini-pierre-antoine/videos/_PRO1986-Modifier.jpg" alt="Pierre-Antoine Martini">
+      <p class="coach-name">Pierre-Antoine Martini</p>
+      <p class="coach-role">Fondateur StrongStudio Kourou</p>
+      <p class="coach-msg">
+        "Merci d'avoir franchi le pas. Je vous rappelle dans les 24h pour fixer votre bilan. En attendant, ouvrez votre guide et commencez par les premiers chapitres — ils posent les bases de ce qu'on verra ensemble."
+      </p>
+    </section>
+
+    <!-- NEXT STEPS -->
+    <section class="steps">
+      <h2>Ce qui va se passer maintenant</h2>
+
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>Dès maintenant</h3>
+          <p>Vous avez <strong>accès immédiat à votre guide complet</strong> via le bouton ci-dessus. Vous recevrez aussi un <strong>email de confirmation</strong> avec le lien pour y retourner plus tard. <em>Vérifiez vos spams au cas où.</em></p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>Sous 24 heures</h3>
+          <p>Pierre-Antoine vous <strong>appelle personnellement</strong> pour convenir du créneau de votre bilan au studio, Place de l'Horloge à Kourou.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>Le jour du bilan</h3>
+          <p>Consultation complète de 40 min : posture, composition corporelle, habitudes de vie, plan d'action personnalisé. <strong>Vous repartez avec une stratégie claire</strong>, que vous décidiez ou non de continuer avec moi.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK CONTACT -->
+    <section class="quick-contact">
+      <p class="quick-contact-title">Une question avant d'être rappelé ?</p>
+      <div class="quick-contact-grid">
+        <a href="tel:0694221799" class="quick-link"><span class="quick-link-icon">📞</span> 0694 22 17 99</a>
+        <a href="mailto:strongstudio-kourou@outlook.fr" class="quick-link"><span class="quick-link-icon">✉️</span> Écrire un mail</a>
+        <a href="https://instagram.com/strongstudio_kourou" target="_blank" rel="noopener" class="quick-link"><span class="quick-link-icon">📷</span> @strongstudio_kourou</a>
+      </div>
+    </section>
+
+    <div class="back-link">
+      <a href="/reserver-son-bilan/">← Retour à l'accueil</a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  Pierre-Antoine Martini · StrongStudio Kourou · Guyane · 2026
+</footer>
+
+</body>
+</html>
