@@ -1,0 +1,2231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Votre Guide StrongStudio — Débuter l'entraînement + Parcours Fondations</title>
+<meta name="description" content="Votre guide complet StrongStudio : 2 séances clés en main pour débuter l'entraînement musculaire + 3 modules Fondations (sommeil, nutrition, récupération).">
+<meta name="robots" content="noindex, nofollow">
+
+<!-- ============================================================ -->
+<!-- Meta Pixel — Tracking guide consultation                       -->
+<!-- ============================================================ -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1152376082444766');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', {
+  content_name: 'Guide Complet StrongStudio',
+  content_category: 'Guide + Fondations',
+  value: 124,
+  currency: 'EUR'
+});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1152376082444766&ev=PageView&noscript=1"/></noscript>
+
+<!-- ============================================================ -->
+<!-- Google Analytics (GA4) — À remplacer par ton ID réel           -->
+<!-- ============================================================ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', {
+    page_title: 'Guide Complet StrongStudio'
+  });
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================ */
+/* RESET & BASE                                                   */
+/* ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:90px}
+
+:root{
+  --bg:#0D1B2A;
+  --bg-alt:#0a1521;
+  --bg-card:#122536;
+  --bg-card-hover:#162a3f;
+  --gold:#E8C547;
+  --gold-light:#f5d267;
+  --gold-soft:rgba(232,197,71,.12);
+  --gold-border:rgba(232,197,71,.3);
+  --gold-deep:#b89a2f;
+  --text:#EAEEF2;
+  --text-dim:#A8B4BF;
+  --text-mute:#6C7A88;
+  --border:rgba(234,238,242,.08);
+  --border-strong:rgba(234,238,242,.15);
+  --warn:#e27560;
+  --shadow:0 20px 60px rgba(0,0,0,.4);
+  --shadow-card:0 8px 24px rgba(0,0,0,.2);
+  --radius:6px;
+  --nav-width:280px;
+  --transition:.3s cubic-bezier(.4,0,.2,1);
+}
+
+body{
+  font-family:'DM Sans',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  font-size:16px;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* Texture noise subtile (charte merci.html) */
+body::before{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.025;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' seed='5'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ============================================================ */
+/* TYPOGRAPHIE                                                    */
+/* ============================================================ */
+h1,h2,h3,h4{
+  font-family:'Bebas Neue',sans-serif;
+  font-weight:400;
+  letter-spacing:.02em;
+  line-height:1.05;
+}
+h1{font-size:clamp(2.5rem,6vw,4.5rem);color:#fff}
+h1 em{color:var(--gold);font-style:normal}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);color:#fff;letter-spacing:.03em}
+h2 em{color:var(--gold);font-style:normal}
+h3{font-size:clamp(1.3rem,2.5vw,1.6rem);color:#fff;letter-spacing:.04em}
+h4{font-size:1rem;color:#fff;letter-spacing:.03em}
+
+p{margin-bottom:1rem;color:var(--text-dim)}
+p strong{color:var(--text);font-weight:700}
+p em{font-style:italic;color:var(--text)}
+
+a{color:var(--gold);text-decoration:none;transition:color .2s}
+a:hover{color:var(--gold-light)}
+
+/* ============================================================ */
+/* HEADER FIXE                                                    */
+/* ============================================================ */
+.header{
+  position:fixed;top:0;left:0;right:0;
+  z-index:100;
+  padding:.9rem 1.5rem;
+  background:rgba(13,27,42,.85);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.header-inner{
+  max-width:1400px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+}
+.logo{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.4rem;letter-spacing:.15em;color:#fff;
+}
+.logo span{color:var(--gold)}
+
+.header-cta{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.55rem 1.1rem;
+  background:var(--gold);color:var(--bg);
+  font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:700;
+  border-radius:var(--radius);
+  letter-spacing:.05em;
+  transition:all .2s;
+}
+.header-cta:hover{background:var(--gold-light);transform:translateY(-1px);color:var(--bg)}
+
+.menu-toggle{
+  display:none;
+  width:42px;height:42px;
+  background:transparent;border:1px solid var(--border-strong);border-radius:var(--radius);
+  cursor:pointer;color:var(--text);
+  align-items:center;justify-content:center;
+}
+.menu-toggle svg{width:22px;height:22px}
+
+@media(max-width:900px){
+  .header-cta{display:none}
+  .menu-toggle{display:inline-flex}
+}
+
+/* ============================================================ */
+/* NAV LATÉRALE STICKY (desktop)                                  */
+/* ============================================================ */
+.layout{
+  max-width:1400px;margin:0 auto;
+  display:grid;
+  grid-template-columns:var(--nav-width) 1fr;
+  gap:3rem;
+  padding:90px 2rem 4rem;
+  position:relative;
+  z-index:2;
+}
+
+.sidenav{
+  position:sticky;top:90px;
+  max-height:calc(100vh - 110px);
+  overflow-y:auto;
+  overflow-x:hidden;
+  padding:1rem 0 2rem;
+  scrollbar-width:thin;
+  scrollbar-color:var(--gold-border) transparent;
+}
+.sidenav::-webkit-scrollbar{width:6px}
+.sidenav::-webkit-scrollbar-track{background:transparent}
+.sidenav::-webkit-scrollbar-thumb{background:var(--gold-soft);border-radius:3px}
+.sidenav::-webkit-scrollbar-thumb:hover{background:var(--gold-border)}
+
+.sidenav-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:.9rem;letter-spacing:.2em;color:var(--gold);
+  margin-bottom:1rem;
+  padding-left:1rem;
+}
+
+.sidenav-section{margin-bottom:1.5rem}
+.sidenav-section-title{
+  font-family:'DM Sans',sans-serif;
+  font-size:.7rem;font-weight:700;letter-spacing:.2em;
+  color:var(--text-mute);text-transform:uppercase;
+  padding:.4rem 1rem;
+  margin-bottom:.3rem;
+  border-top:1px solid var(--border);
+  padding-top:1rem;
+}
+
+.sidenav a{
+  display:flex;align-items:center;gap:.75rem;
+  padding:.5rem 1rem;
+  font-size:.88rem;
+  color:var(--text-dim);
+  border-left:2px solid transparent;
+  transition:all var(--transition);
+  line-height:1.35;
+}
+.sidenav a:hover{
+  color:var(--text);
+  background:rgba(232,197,71,.03);
+  border-left-color:var(--gold-border);
+}
+.sidenav a.active{
+  color:var(--gold);
+  border-left-color:var(--gold);
+  background:var(--gold-soft);
+  font-weight:500;
+}
+.sidenav a .num{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1rem;
+  color:var(--gold);
+  min-width:24px;
+  letter-spacing:.05em;
+}
+
+@media(max-width:900px){
+  .layout{grid-template-columns:1fr;padding:80px 1.25rem 4rem;gap:0}
+  .sidenav{
+    position:fixed;
+    top:0;left:0;bottom:0;
+    width:85%;max-width:320px;
+    height:100vh;
+    background:var(--bg-alt);
+    border-right:1px solid var(--border);
+    padding:80px 0 2rem;
+    transform:translateX(-100%);
+    transition:transform var(--transition);
+    z-index:99;
+    box-shadow:var(--shadow);
+  }
+  .sidenav.open{transform:translateX(0)}
+  .sidenav-backdrop{
+    position:fixed;inset:0;
+    background:rgba(0,0,0,.5);
+    opacity:0;pointer-events:none;
+    transition:opacity var(--transition);
+    z-index:98;
+  }
+  .sidenav-backdrop.open{opacity:1;pointer-events:auto}
+}
+
+/* ============================================================ */
+/* MAIN CONTENT                                                   */
+/* ============================================================ */
+.main{min-width:0}
+
+.section{
+  padding:3rem 0 1.5rem;
+  scroll-margin-top:90px;
+}
+.section:first-child{padding-top:2rem}
+
+/* ============================================================ */
+/* HERO                                                           */
+/* ============================================================ */
+.hero{
+  text-align:left;
+  padding:1.5rem 0 3rem;
+  position:relative;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  top:-40px;right:-50px;
+  width:400px;height:400px;
+  background:radial-gradient(circle, rgba(232,197,71,.1), transparent 70%);
+  pointer-events:none;
+  z-index:-1;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:.5rem;
+  color:var(--gold);font-size:.75rem;font-weight:700;
+  letter-spacing:.25em;text-transform:uppercase;
+  padding:.5rem 1.1rem;
+  background:var(--gold-soft);
+  border:1px solid var(--gold-border);
+  border-radius:100px;
+  margin-bottom:1.5rem;
+}
+.hero-eyebrow::before{
+  content:"";
+  display:inline-block;
+  width:8px;height:8px;
+  background:var(--gold);
+  border-radius:50%;
+  animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.5;transform:scale(.85)}
+}
+.hero h1{
+  margin-bottom:1.5rem;
+  line-height:.95;
+}
+.hero-rule{
+  width:80px;height:3px;
+  background:var(--gold);
+  margin:1.25rem 0;
+}
+.hero-lead{
+  font-size:1.15rem;
+  color:var(--text-dim);
+  max-width:620px;
+  margin-bottom:2rem;
+  line-height:1.55;
+}
+.hero-lead strong{color:var(--text)}
+
+.hero-meta{
+  display:flex;gap:2rem;flex-wrap:wrap;
+  padding-top:1.5rem;
+  border-top:1px solid var(--border);
+  font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--text-mute);
+}
+.hero-meta strong{color:var(--gold);font-weight:700}
+
+/* Cards d'intro (overview des 2 cadeaux) */
+.overview{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1rem;
+  margin-top:2.5rem;
+}
+.overview-card{
+  padding:1.5rem;
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-left:3px solid var(--gold);
+  border-radius:var(--radius);
+  transition:all var(--transition);
+}
+.overview-card:hover{
+  background:var(--bg-card-hover);
+  transform:translateY(-2px);
+}
+.overview-num{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:2rem;color:var(--gold);
+  line-height:.9;margin-bottom:.6rem;
+  letter-spacing:.05em;
+}
+.overview-card h4{
+  font-size:1.05rem;
+  font-family:'DM Sans',sans-serif;
+  font-weight:700;
+  letter-spacing:0;
+  margin-bottom:.3rem;
+}
+.overview-card p{
+  font-size:.88rem;
+  color:var(--text-dim);
+  margin-bottom:0;
+}
+
+/* ============================================================ */
+/* HEADINGS DE SECTION (Guide / Fondations)                       */
+/* ============================================================ */
+.part-head{
+  display:flex;align-items:center;gap:1.2rem;
+  padding:2rem 0 1rem;
+  margin-top:1.5rem;
+  border-top:1px solid var(--border);
+}
+.part-head-num{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:4rem;color:var(--gold);
+  line-height:.7;
+}
+.part-head-block{flex:1}
+.part-head-label{
+  color:var(--gold);font-size:.7rem;font-weight:700;
+  letter-spacing:.25em;text-transform:uppercase;
+  margin-bottom:.3rem;
+}
+.part-head h2{
+  margin:0;
+  font-size:clamp(2rem,4.5vw,3rem);
+}
+
+/* ============================================================ */
+/* CHAPITRE                                                       */
+/* ============================================================ */
+.chapter{
+  padding:2.5rem 0 1rem;
+  scroll-margin-top:90px;
+}
+.chapter-head{
+  display:flex;align-items:baseline;gap:1rem;
+  margin-bottom:1.5rem;
+}
+.chapter-num{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:3rem;color:var(--gold);
+  line-height:.85;
+  letter-spacing:.03em;
+  flex-shrink:0;
+}
+.chapter-title{
+  font-size:clamp(1.6rem,3.5vw,2.3rem);
+  color:#fff;line-height:1.1;
+}
+.chapter-title em{color:var(--gold);font-style:normal}
+
+.content{font-size:1rem;line-height:1.7}
+.content p{margin-bottom:1rem}
+.content h3{
+  font-size:1.35rem;
+  margin:2rem 0 .8rem;
+  color:#fff;
+}
+.content h4{
+  font-family:'DM Sans',sans-serif;
+  font-size:1.02rem;font-weight:700;
+  color:#fff;
+  margin:1.5rem 0 .5rem;
+  letter-spacing:0;
+}
+
+/* ============================================================ */
+/* PULL QUOTE                                                     */
+/* ============================================================ */
+.pull-quote{
+  font-family:'DM Sans',sans-serif;
+  font-style:italic;
+  font-size:1.25rem;
+  line-height:1.5;
+  color:#fff;
+  padding:1.5rem 1.75rem;
+  border-left:3px solid var(--gold);
+  background:var(--gold-soft);
+  margin:1.5rem 0;
+  border-radius:0 var(--radius) var(--radius) 0;
+}
+
+/* ============================================================ */
+/* CALLOUT                                                        */
+/* ============================================================ */
+.callout{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-left:3px solid var(--gold);
+  padding:1.3rem 1.5rem;
+  margin:1.5rem 0;
+  border-radius:0 var(--radius) var(--radius) 0;
+}
+.callout-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1rem;letter-spacing:.12em;
+  color:var(--gold);
+  margin-bottom:.5rem;
+}
+.callout p{margin-bottom:.5rem;font-size:.95rem;color:var(--text-dim);line-height:1.55}
+.callout p:last-child{margin-bottom:0}
+.callout p strong{color:var(--text)}
+
+.callout.warning{border-left-color:var(--warn)}
+.callout.warning .callout-title{color:var(--warn)}
+
+/* ============================================================ */
+/* LISTES NUMÉROTÉES                                              */
+/* ============================================================ */
+.numbered-list{list-style:none;padding:0;margin:1.5rem 0}
+.numbered-list li{
+  display:flex;gap:1.25rem;
+  padding:1.15rem 1.3rem;
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-left:3px solid var(--gold);
+  border-radius:var(--radius);
+  margin-bottom:.7rem;
+  transition:all var(--transition);
+}
+.numbered-list li:hover{background:var(--bg-card-hover)}
+.numbered-list .num{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:2rem;color:var(--gold);
+  line-height:1;
+  flex-shrink:0;min-width:42px;
+  letter-spacing:.05em;
+}
+.numbered-list .content-li{flex:1;min-width:0}
+.numbered-list h4{
+  font-family:'DM Sans',sans-serif;
+  font-size:1.02rem;font-weight:700;
+  margin-bottom:.3rem;
+  color:#fff;letter-spacing:0;
+}
+.numbered-list p{
+  margin:0;
+  font-size:.94rem;line-height:1.55;color:var(--text-dim);
+}
+
+/* ============================================================ */
+/* TABLES                                                         */
+/* ============================================================ */
+.table-wrap{
+  overflow-x:auto;
+  margin:1.5rem 0;
+  border-radius:var(--radius);
+}
+.table-clean{
+  width:100%;
+  border-collapse:collapse;
+  font-size:.95rem;
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+  min-width:500px;
+}
+.table-clean th{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:.95rem;letter-spacing:.1em;
+  color:var(--gold);text-align:left;
+  padding:.9rem 1rem;
+  border-bottom:1px solid var(--border-strong);
+  background:var(--bg-alt);
+}
+.table-clean td{
+  padding:.85rem 1rem;
+  border-bottom:1px solid var(--border);
+  color:var(--text-dim);
+}
+.table-clean td strong{color:var(--text)}
+.table-clean tr:last-child td{border-bottom:none}
+
+/* ============================================================ */
+/* EXERCISE CARD                                                  */
+/* ============================================================ */
+.exercise{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:1.4rem 1.6rem;
+  margin-bottom:1rem;
+  transition:all var(--transition);
+}
+.exercise:hover{border-color:var(--border-strong)}
+.exercise.signature{
+  border:1px solid var(--gold-border);
+  background:linear-gradient(180deg, rgba(232,197,71,.05), var(--bg-card));
+}
+.exercise-head{
+  display:flex;gap:1.25rem;align-items:flex-start;
+  margin-bottom:1rem;
+  padding-bottom:1rem;
+  border-bottom:1px solid var(--border);
+}
+.exercise-num{
+  flex-shrink:0;
+  width:50px;height:50px;border-radius:50%;
+  background:var(--gold-soft);
+  border:1.5px solid var(--gold-border);
+  color:var(--gold);
+  font-family:'Bebas Neue',sans-serif;font-size:1.5rem;
+  display:flex;align-items:center;justify-content:center;
+  letter-spacing:.05em;
+}
+.exercise.signature .exercise-num{
+  background:var(--gold);color:var(--bg);border-color:var(--gold);
+}
+.exercise-title-block{flex:1;min-width:0}
+.exercise-badge{
+  display:inline-block;
+  background:var(--gold);color:var(--bg);
+  padding:.2rem .7rem;border-radius:100px;
+  font-size:.65rem;letter-spacing:.18em;font-weight:700;
+  text-transform:uppercase;margin-bottom:.4rem;
+}
+.exercise-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.5rem;letter-spacing:.04em;
+  color:#fff;line-height:1.1;margin-bottom:.3rem;
+}
+.exercise-muscles{
+  font-size:.78rem;color:var(--gold);
+  letter-spacing:.14em;text-transform:uppercase;font-weight:500;
+}
+.exercise-meta{
+  display:flex;gap:1.5rem;
+  margin-bottom:1rem;
+  padding:.75rem 1rem;
+  background:var(--bg-alt);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  flex-wrap:wrap;
+}
+.exercise-meta-item{display:flex;flex-direction:column;gap:.15rem}
+.exercise-meta-item .label{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:.7rem;letter-spacing:.15em;
+  color:var(--text-mute);text-transform:uppercase;
+}
+.exercise-meta-item .value{
+  font-weight:700;color:var(--text);font-size:.92rem;
+}
+.exercise-section{margin-bottom:.75rem}
+.exercise-section:last-child{margin-bottom:0}
+.exercise-section h5{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:.8rem;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--gold);
+  margin-bottom:.3rem;font-weight:400;
+}
+.exercise-section p{
+  font-size:.92rem;line-height:1.55;
+  color:var(--text-dim);margin:0;
+}
+.exercise-section.warning{
+  padding:.65rem .9rem;
+  background:rgba(226,117,96,.08);
+  border-left:2px solid var(--warn);
+  border-radius:0 var(--radius) var(--radius) 0;
+  margin-top:.7rem;
+}
+.exercise-section.warning h5{color:var(--warn)}
+
+/* ============================================================ */
+/* CTA BLOC (style merci.html gifts-block)                        */
+/* ============================================================ */
+.cta-box{
+  background:var(--bg-card);
+  border:1px solid var(--gold-border);
+  padding:clamp(2rem,5vw,3rem) clamp(1.5rem,4vw,2.5rem);
+  border-radius:var(--radius);
+  text-align:center;
+  margin:3rem 0 2rem;
+  position:relative;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+.cta-box::before{
+  content:"";
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse at top, rgba(232,197,71,.1), transparent 65%);
+  pointer-events:none;
+}
+.cta-box > *{position:relative}
+.cta-box-icon{
+  font-size:2.2rem;margin-bottom:.6rem;display:block;
+}
+.cta-box h2{
+  color:var(--gold);
+  font-size:clamp(1.8rem,4vw,2.5rem);
+  margin-bottom:.5rem;
+}
+.cta-box-sub{
+  color:var(--text-dim);
+  font-size:1rem;
+  font-style:italic;
+  margin-bottom:2rem;
+}
+
+.cta-checks{
+  list-style:none;text-align:left;
+  max-width:480px;
+  margin:0 auto 2rem;
+}
+.cta-checks li{
+  padding:.6rem 0 .6rem 2rem;
+  position:relative;
+  color:var(--text);font-size:.95rem;
+  border-bottom:1px solid var(--border);
+}
+.cta-checks li:last-child{border-bottom:none}
+.cta-checks li::before{
+  content:"✓";
+  position:absolute;left:0;top:.6rem;
+  color:var(--gold);font-weight:700;font-size:1.1rem;
+}
+
+.cta-btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:1rem 2rem;
+  background:var(--gold);color:var(--bg);
+  font-family:'DM Sans',sans-serif;
+  font-size:1rem;font-weight:700;
+  letter-spacing:.05em;
+  border-radius:var(--radius);
+  transition:all .2s;
+  margin:1rem 0 1.5rem;
+}
+.cta-btn:hover{background:var(--gold-light);transform:translateY(-2px);color:var(--bg);box-shadow:0 12px 30px rgba(232,197,71,.2)}
+
+.contact-grid{
+  display:flex;gap:.7rem;
+  flex-wrap:wrap;justify-content:center;
+  margin-top:1.5rem;
+}
+.contact-item{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.65rem 1.1rem;
+  background:var(--bg);
+  border:1px solid var(--border-strong);
+  border-radius:var(--radius);
+  font-size:.88rem;color:var(--text);
+  transition:all .2s;
+}
+.contact-item:hover{border-color:var(--gold);color:var(--gold)}
+.contact-item .icon{color:var(--gold)}
+
+/* ============================================================ */
+/* COPY BLOC — Message copier-coller + canaux de contact          */
+/* ============================================================ */
+.copy-block{
+  text-align:left;
+  margin:1rem auto 0;
+  max-width:620px;
+}
+.copy-block-intro{
+  text-align:center;
+  margin-bottom:1.5rem;
+}
+.copy-block-intro .tag-pill{
+  margin-bottom:1rem;
+}
+.copy-block-lead{
+  color:var(--text-dim);
+  font-size:1rem;
+  line-height:1.55;
+  margin:0;
+}
+.copy-block-lead strong{color:var(--text)}
+
+/* Bloc message à copier */
+.copy-message{
+  position:relative;
+  background:var(--bg);
+  border:1.5px solid var(--gold-border);
+  border-radius:var(--radius);
+  padding:1.4rem 1.3rem 1.3rem;
+  margin-bottom:1.5rem;
+  box-shadow:inset 0 2px 8px rgba(0,0,0,.2);
+}
+.copy-message::before{
+  content:"MESSAGE À ENVOYER";
+  position:absolute;
+  top:-.5rem;left:1rem;
+  background:var(--bg);
+  padding:0 .6rem;
+  font-family:'Bebas Neue',sans-serif;
+  font-size:.65rem;letter-spacing:.22em;
+  color:var(--gold);
+}
+.copy-message-text{
+  font-family:'DM Sans',sans-serif;
+  font-size:1.05rem;
+  color:var(--text);
+  line-height:1.5;
+  font-style:italic;
+  padding-bottom:1rem;
+  border-bottom:1px dashed var(--border-strong);
+  margin-bottom:1rem;
+}
+.copy-btn{
+  width:100%;
+  padding:.8rem 1rem;
+  background:var(--gold);
+  color:var(--bg);
+  border:none;
+  border-radius:var(--radius);
+  font-family:'DM Sans',sans-serif;
+  font-size:.92rem;font-weight:700;
+  cursor:pointer;
+  transition:all .25s;
+  letter-spacing:.03em;
+  position:relative;
+}
+.copy-btn:hover{background:var(--gold-light);transform:translateY(-1px)}
+.copy-btn:active{transform:translateY(0)}
+.copy-btn .copy-btn-success{display:none}
+.copy-btn.copied{background:#2d7a4f}
+.copy-btn.copied .copy-btn-default{display:none}
+.copy-btn.copied .copy-btn-success{display:inline;color:#fff}
+
+/* Libellé "Puis envoyez-le ici" */
+.copy-block-hint{
+  text-align:center;
+  font-size:.85rem;letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--text-mute);
+  margin-bottom:1rem;
+}
+
+/* Canaux de contact */
+.copy-channels{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(160px, 1fr));
+  gap:.7rem;
+  margin-bottom:1.75rem;
+}
+.copy-channel{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:1.1rem .8rem;
+  background:var(--bg-card);
+  border:1px solid var(--border-strong);
+  border-radius:var(--radius);
+  text-align:center;
+  text-decoration:none;
+  transition:all .25s;
+  gap:.25rem;
+}
+.copy-channel:hover{
+  border-color:var(--gold);
+  background:var(--bg-card-hover);
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,.2);
+  color:inherit;
+}
+.copy-channel-icon{
+  font-size:1.6rem;
+  margin-bottom:.2rem;
+}
+.copy-channel-label{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.05rem;
+  letter-spacing:.08em;
+  color:var(--gold);
+}
+.copy-channel-sub{
+  font-size:.72rem;
+  color:var(--text-mute);
+  letter-spacing:.05em;
+}
+.copy-channel.whatsapp:hover{border-color:#25D366}
+.copy-channel.whatsapp .copy-channel-label{color:#25D366}
+.copy-channel.sms .copy-channel-label,
+.copy-channel.email .copy-channel-label{color:var(--gold)}
+
+.copy-block-or{
+  text-align:center;
+  font-size:.8rem;letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--text-mute);
+  margin:1rem 0;
+}
+
+.copy-phone{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.7rem;
+  padding:1rem 1.5rem;
+  background:var(--bg-card);
+  border:1.5px solid var(--gold);
+  border-radius:var(--radius);
+  text-decoration:none;
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.3rem;
+  color:var(--gold);
+  letter-spacing:.08em;
+  transition:all .25s;
+  max-width:320px;
+  margin:0 auto;
+}
+.copy-phone:hover{
+  background:var(--gold);
+  color:var(--bg);
+  transform:translateY(-1px);
+}
+.copy-phone-icon{font-size:1.2rem}
+
+@media(max-width:480px){
+  .copy-channels{grid-template-columns:1fr}
+  .copy-channel{flex-direction:row;justify-content:flex-start;gap:1rem;padding:.9rem 1rem;text-align:left}
+  .copy-channel-icon{margin-bottom:0}
+  .copy-channel-sub{display:block}
+}
+
+.cta-location{
+  margin-top:1.5rem;padding-top:1rem;
+  border-top:1px solid var(--border);
+  font-size:.78rem;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--text-mute);
+}
+
+/* ============================================================ */
+/* CTA FLOTTANT MOBILE                                            */
+/* ============================================================ */
+.cta-floating{
+  position:fixed;bottom:1rem;left:1rem;right:1rem;
+  display:none;
+  padding:.9rem 1.2rem;
+  background:var(--gold);color:var(--bg);
+  font-weight:700;text-align:center;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  z-index:50;
+  font-size:.95rem;
+}
+.cta-floating:hover{background:var(--gold-light);color:var(--bg)}
+@media(max-width:900px){
+  .cta-floating{display:block}
+  .main{padding-bottom:5rem}
+}
+
+/* ============================================================ */
+/* FOOTER                                                         */
+/* ============================================================ */
+.footer-site{
+  padding:2rem 1.5rem;
+  border-top:1px solid var(--border);
+  text-align:center;
+  color:var(--text-mute);
+  font-size:.8rem;letter-spacing:.05em;
+  margin-top:3rem;
+}
+
+/* ============================================================ */
+/* REVEAL ANIMATIONS                                              */
+/* ============================================================ */
+.reveal{
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity .7s ease, transform .7s ease;
+}
+.reveal.in-view{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* Reduced motion */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+
+/* ============================================================ */
+/* ACCENTS & MICRO-DÉTAILS                                        */
+/* ============================================================ */
+.tag-pill{
+  display:inline-block;
+  font-size:.7rem;font-weight:700;letter-spacing:.2em;
+  color:var(--gold);text-transform:uppercase;
+  padding:.3rem .75rem;
+  background:var(--gold-soft);
+  border:1px solid var(--gold-border);
+  border-radius:100px;
+}
+
+.sep{
+  width:60px;height:2px;
+  background:var(--gold);
+  margin:2rem 0;
+}
+
+/* Reduce spacing on mobile */
+@media(max-width:640px){
+  .exercise{padding:1.1rem 1.2rem}
+  .exercise-meta{gap:1rem;padding:.65rem .8rem}
+  .callout{padding:1rem 1.1rem}
+  .numbered-list li{padding:1rem 1.1rem;gap:.9rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- HEADER FIXE                                                    -->
+<!-- ============================================================ -->
+<header class="header">
+  <div class="header-inner">
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+    <div class="logo">STRONG<span>STUDIO</span></div>
+    <a href="#cta" class="header-cta" onclick="trackBilanClick('cta_header')">→ Je veux mon bilan</a>
+  </div>
+</header>
+
+<!-- ============================================================ -->
+<!-- LAYOUT                                                         -->
+<!-- ============================================================ -->
+<div class="sidenav-backdrop" id="navBackdrop"></div>
+
+<div class="layout">
+
+  <!-- ========================================================== -->
+  <!-- SIDENAV                                                      -->
+  <!-- ========================================================== -->
+  <aside class="sidenav" id="sidenav">
+    <div class="sidenav-title">Votre guide</div>
+
+    <div class="sidenav-section">
+      <div class="sidenav-section-title">Accueil</div>
+      <a href="#hero"><span class="num">•</span> Bienvenue</a>
+    </div>
+
+    <div class="sidenav-section">
+      <div class="sidenav-section-title">Guide Débuter</div>
+      <a href="#chap1"><span class="num">01</span> Pourquoi soulever</a>
+      <a href="#chap2"><span class="num">02</span> Résultats réalistes</a>
+      <a href="#chap3"><span class="num">03</span> Mouvements poly.</a>
+      <a href="#chap4"><span class="num">04</span> Surcharge progressive</a>
+      <a href="#chap5"><span class="num">05</span> 6-8 reps, 4 séries</a>
+      <a href="#seance-a"><span class="num">A</span> Séance A · Squat + Pousser</a>
+      <a href="#seance-b"><span class="num">B</span> Séance B · Charnière + Press</a>
+      <a href="#recup"><span class="num">✦</span> Récupération</a>
+      <a href="#plan"><span class="num">🎯</span> Plan 4 semaines</a>
+    </div>
+
+    <div class="sidenav-section">
+      <div class="sidenav-section-title">Parcours Fondations</div>
+      <a href="#mod1"><span class="num">01</span> Sommeil</a>
+      <a href="#mod2"><span class="num">02</span> Nutrition</a>
+      <a href="#mod3"><span class="num">03</span> Stress & récup</a>
+      <a href="#semaine"><span class="num">📅</span> Semaine type</a>
+    </div>
+
+    <div class="sidenav-section">
+      <div class="sidenav-section-title">Passer à l'action</div>
+      <a href="#cta"><span class="num">🎁</span> Votre bilan offert</a>
+    </div>
+  </aside>
+
+  <!-- ========================================================== -->
+  <!-- MAIN CONTENT                                                 -->
+  <!-- ========================================================== -->
+  <main class="main">
+
+    <!-- HERO ---------------------------------------------------- -->
+    <section class="section hero" id="hero">
+      <span class="hero-eyebrow">Votre guide offert · Valeur 124 €</span>
+      <h1>Votre guide<br>StrongStudio <em>complet.</em></h1>
+      <div class="hero-rule"></div>
+      <p class="hero-lead">
+        <strong>Pierre-Antoine Martini.</strong> Coach StrongStudio Kourou. Voici la méthode que j'applique au studio avec tous mes nouveaux clients — le guide complet pour débuter l'entraînement musculaire et construire les 3 fondations qui déterminent 80% de vos résultats.
+      </p>
+
+      <div class="hero-meta">
+        <span><strong>~30</strong> min de lecture</span>
+        <span><strong>2</strong> séances complètes</span>
+        <span><strong>3</strong> modules Fondations</span>
+        <span><strong>1</strong> plan 4 semaines</span>
+      </div>
+
+      <div class="overview">
+        <div class="overview-card">
+          <div class="overview-num">01</div>
+          <h4>Guide Débuter l'Entraînement</h4>
+          <p>Recomposition corporelle, polyarticulaires, surcharge progressive. 2 séances complètes prêtes à l'emploi.</p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-num">02</div>
+          <h4>Parcours Fondations · 3 modules</h4>
+          <p>Sommeil, Nutrition, Stress & Récupération — les fondations biologiques qui déterminent 80% de vos résultats.</p>
+        </div>
+      </div>
+
+      <!-- Message favoris version coach -->
+      <div style="background:var(--bg-card);border:1px solid var(--gold-border);border-left:3px solid var(--gold);border-radius:var(--radius);padding:1.25rem 1.5rem;margin-top:2rem;display:flex;gap:1rem;align-items:flex-start">
+        <div style="font-size:1.8rem;line-height:1;flex-shrink:0">⭐</div>
+        <div>
+          <p style="font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.12em;color:var(--gold);margin-bottom:.4rem">Un conseil avant de commencer</p>
+          <p style="margin:0;font-size:.95rem;color:var(--text-dim);line-height:1.6"><strong style="color:var(--text)">Ajoutez cette page à vos favoris.</strong> Vous y reviendrez pendant vos 4 prochaines semaines d'entraînement, et à chaque fois que vous voudrez revoir un exercice ou un module. <span style="color:var(--text-mute);font-size:.85rem">— Raccourcis : <code style="background:var(--bg);padding:.1rem .4rem;border-radius:3px;font-size:.8rem">Ctrl+D</code> (Windows) · <code style="background:var(--bg);padding:.1rem .4rem;border-radius:3px;font-size:.8rem">⌘+D</code> (Mac) · icône ⭐ (mobile).</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- PARTIE I — GUIDE DÉBUTER                                     -->
+    <!-- ========================================================== -->
+    <div class="part-head reveal">
+      <div class="part-head-num">I</div>
+      <div class="part-head-block">
+        <div class="part-head-label">Première partie</div>
+        <h2>Guide Débuter <em>l'entraînement.</em></h2>
+      </div>
+    </div>
+
+    <!-- CHAPITRE 1 ---------------------------------------------- -->
+    <section class="chapter reveal" id="chap1">
+      <div class="chapter-head">
+        <div class="chapter-num">01</div>
+        <h2 class="chapter-title">Pourquoi soulever des charges change <em>tout.</em></h2>
+      </div>
+      <div class="content">
+        <p class="pull-quote">Ce guide ne vous promet pas de perdre "5 kg en 3 semaines". Ce type de promesse est malhonnête, et les méthodes qui vont avec détruisent plus qu'elles ne construisent.</p>
+
+        <p>Ce que je vous propose, c'est la <strong>recomposition corporelle</strong> — un processus qui consiste à <strong>perdre de la graisse tout en gagnant du muscle</strong>, simultanément. Le chiffre sur la balance n'est plus l'indicateur : c'est votre silhouette, votre force, votre énergie qui deviennent les vrais baromètres.</p>
+
+        <h3>Pourquoi c'est la seule stratégie qui tient</h3>
+
+        <p>Une simple perte de poids (régime hypocalorique sans musculation) vous fait perdre autant de muscle que de graisse. Résultat : un corps plus petit, mais plus mou, plus faible, au métabolisme ralenti — et une reprise de poids quasi inévitable dans les 12 mois.</p>
+
+        <p>La musculation inverse cette logique. Chaque kilo de muscle gagné augmente votre dépense énergétique au repos d'environ 13 kcal par jour. Multiplié sur plusieurs kilos, sur une année, l'effet est considérable. <strong>Votre corps devient une machine à brûler, même quand vous dormez.</strong></p>
+
+        <h3>Les 4 bénéfices concrets</h3>
+
+        <ol class="numbered-list">
+          <li>
+            <div class="num">01</div>
+            <div class="content-li">
+              <h4>Une silhouette plus ferme et plus tonique</h4>
+              <p>Non, soulever des kettlebells ne vous rendra pas "volumineux". La prise de masse extrême demande des années de travail spécifique. Ce que vous obtiendrez : silhouette affinée, muscles dessinés, posture redressée.</p>
+            </div>
+          </li>
+          <li>
+            <div class="num">02</div>
+            <div class="content-li">
+              <h4>Un métabolisme boosté 24h/24</h4>
+              <p>Le muscle est un tissu actif qui consomme de l'énergie en permanence. Plus vous en avez, plus vous brûlez de calories au quotidien — y compris en dormant.</p>
+            </div>
+          </li>
+          <li>
+            <div class="num">03</div>
+            <div class="content-li">
+              <h4>Une santé qui se renforce de l'intérieur</h4>
+              <p>Réduction des risques de diabète de type 2, maladies cardiovasculaires, ostéoporose et certains cancers.</p>
+            </div>
+          </li>
+          <li>
+            <div class="num">04</div>
+            <div class="content-li">
+              <h4>Une autonomie préservée pour les décennies à venir</h4>
+              <p>Après 30 ans : 1 à 2% de masse musculaire perdus par an. À 60 ans sans entraînement, jusqu'à 30% de perte. Ce que vous construisez aujourd'hui, c'est votre liberté de demain.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CHAPITRE 2 ---------------------------------------------- -->
+    <section class="chapter reveal" id="chap2">
+      <div class="chapter-head">
+        <div class="chapter-num">02</div>
+        <h2 class="chapter-title">Les résultats <em>réalistes.</em></h2>
+      </div>
+      <div class="content">
+        <p>Soyons honnêtes, parce que personne ne vous le dit assez clairement.</p>
+
+        <div class="table-wrap">
+          <table class="table-clean">
+            <tr><th>Période</th><th>Ce qui se passe vraiment</th></tr>
+            <tr><td><strong>Semaines 1-4</strong></td><td>Vous apprenez les mouvements. Votre système nerveux s'adapte. Plus tonique, meilleur sommeil, plus d'énergie — <em>mais peu de changement visuel</em>.</td></tr>
+            <tr><td><strong>Semaines 4-8</strong></td><td>Premières transformations. Vos vêtements tombent différemment. Vos proches remarquent quelque chose sans savoir quoi.</td></tr>
+            <tr><td><strong>Semaines 8-12</strong></td><td>Résultats nets. Silhouette affinée, muscles qui se dessinent, posture qui change.</td></tr>
+            <tr><td><strong>Mois 4-6</strong></td><td>Transformation visible, indéniable, pour vous comme pour les autres.</td></tr>
+          </table>
+        </div>
+
+        <div class="callout warning">
+          <div class="callout-title">⚠ Le piège absolu : se peser tous les jours</div>
+          <p>La balance est le pire indicateur de progrès en recomposition. Vous pouvez perdre 3 kg de graisse et gagner 2 kg de muscle sur 2 mois — la balance affichera −1 kg, mais votre corps aura changé radicalement.</p>
+        </div>
+
+        <h3>Les 4 indicateurs fiables</h3>
+
+        <ol class="numbered-list">
+          <li><div class="num">01</div><div class="content-li"><h4>Photos avant / après</h4><p>Tous les mois. Même lumière, même tenue, mêmes angles (face, profil, dos).</p></div></li>
+          <li><div class="num">02</div><div class="content-li"><h4>Mesures au mètre-ruban</h4><p>Tour de taille, hanches, cuisses, bras. Une fois par mois.</p></div></li>
+          <li><div class="num">03</div><div class="content-li"><h4>Performances à l'entraînement</h4><p>Charges soulevées, répétitions réalisées. Si vous progressez, votre corps aussi.</p></div></li>
+          <li><div class="num">04</div><div class="content-li"><h4>Sensations</h4><p>Qualité du sommeil, niveau d'énergie, comment vos vêtements tombent.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CHAPITRE 3 ---------------------------------------------- -->
+    <section class="chapter reveal" id="chap3">
+      <div class="chapter-head">
+        <div class="chapter-num">03</div>
+        <h2 class="chapter-title">Les mouvements <em>polyarticulaires.</em></h2>
+      </div>
+      <div class="content">
+        <p class="pull-quote">Si vous ne deviez retenir qu'une chose de ce guide : <strong>90% de vos résultats viendront de 5 à 6 mouvements fondamentaux</strong>, pas de 30 exercices d'isolation.</p>
+
+        <p>Un <strong>mouvement polyarticulaire</strong> sollicite plusieurs articulations et groupes musculaires simultanément. Un <strong>mouvement d'isolation</strong> ne cible qu'un seul muscle.</p>
+
+        <h3>Pourquoi c'est 10× plus efficace quand on démarre</h3>
+
+        <ol class="numbered-list">
+          <li><div class="num">→</div><div class="content-li"><h4>Plus de calories brûlées</h4><p>Plus de muscles impliqués = plus de dépense énergétique par répétition.</p></div></li>
+          <li><div class="num">→</div><div class="content-li"><h4>Stimulation hormonale supérieure</h4><p>Testostérone et hormone de croissance, qui favorisent la recomposition.</p></div></li>
+          <li><div class="num">→</div><div class="content-li"><h4>Chaînes musculaires entières</h4><p>Pas des muscles isolés — c'est ce qui crée une silhouette harmonieuse.</p></div></li>
+          <li><div class="num">→</div><div class="content-li"><h4>Gain de temps</h4><p>Une séance de 45 minutes suffit.</p></div></li>
+        </ol>
+
+        <h3>Les 6 patterns de mouvement humain</h3>
+
+        <div class="table-wrap">
+          <table class="table-clean">
+            <tr><td><strong>S'accroupir</strong></td><td>Squat → quadriceps, fessiers, tronc</td></tr>
+            <tr><td><strong>Charnière de hanche</strong></td><td>Soulevé de terre → ischios, fessiers, lombaires</td></tr>
+            <tr><td><strong>Pousser</strong></td><td>Pompes, press overhead → pectoraux, épaules, triceps</td></tr>
+            <tr><td><strong>Tirer</strong></td><td>Rowing, tirage → dos, biceps</td></tr>
+            <tr><td><strong>Se déplacer</strong></td><td>Fentes, marches chargées → équilibre, unilatéral</td></tr>
+            <tr><td><strong>Gainer</strong></td><td>Planche, suspensions → tronc, stabilité</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPITRE 4 ---------------------------------------------- -->
+    <section class="chapter reveal" id="chap4">
+      <div class="chapter-head">
+        <div class="chapter-num">04</div>
+        <h2 class="chapter-title">La surcharge <em>progressive.</em></h2>
+      </div>
+      <div class="content">
+        <p>La musculation suit une logique simple : <strong>votre corps s'adapte à ce que vous lui imposez.</strong> Si vous refaites la même séance avec les mêmes charges pendant 6 mois, vous aurez exactement le même corps dans 6 mois.</p>
+
+        <p>Pour continuer à progresser, il faut continuer à demander un peu plus à votre corps — c'est le principe de <strong>surcharge progressive</strong>.</p>
+
+        <h3>Les 5 leviers, du plus simple au plus technique</h3>
+
+        <ol class="numbered-list">
+          <li><div class="num">01</div><div class="content-li"><h4>Ajouter des répétitions <span style="font-weight:400;color:var(--text-mute);font-size:.82rem">· débutant</span></h4><p>Si vous faisiez 4×4, passez à 4×5, puis 4×6. Une fois 4×6 propre, augmentez la charge et repartez à 4×4.</p></div></li>
+          <li><div class="num">02</div><div class="content-li"><h4>Ajouter du poids <span style="font-weight:400;color:var(--text-mute);font-size:.82rem">· débutant-intermédiaire</span></h4><p>Passez de 8 kg à 10 kg. Sauts typiques : 2 à 4 kg. Pour qui démarre : un saut de 2 kg à la fois.</p></div></li>
+          <li><div class="num">03</div><div class="content-li"><h4>Ajouter des séries <span style="font-weight:400;color:var(--text-mute);font-size:.82rem">· intermédiaire</span></h4><p>De 4 à 5 séries augmente le volume sans changer la charge.</p></div></li>
+          <li><div class="num">04</div><div class="content-li"><h4>Réduire les temps de repos <span style="font-weight:400;color:var(--text-mute);font-size:.82rem">· avancé</span></h4><p>Pour un débutant, <strong>conservez toujours 90-120 secondes minimum</strong>. La réduction viendra plus tard.</p></div></li>
+          <li><div class="num">05</div><div class="content-li"><h4>Améliorer la technique <span style="font-weight:400;color:var(--text-mute);font-size:.82rem">· tous niveaux</span></h4><p>Descendre plus profond, contrôler la descente sur 3 secondes, meilleure posture — tout cela augmente la difficulté sans toucher aux chiffres.</p></div></li>
+        </ol>
+
+        <div class="callout">
+          <div class="callout-title">⚡ Règle d'or pour qui démarre</div>
+          <p><strong>Ne changez qu'une seule variable à la fois</strong>, et jamais avant 2 à 3 semaines sur la même séance. Le bon rythme : <strong>une micro-progression par semaine</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPITRE 5 ---------------------------------------------- -->
+    <section class="chapter reveal" id="chap5">
+      <div class="chapter-head">
+        <div class="chapter-num">05</div>
+        <h2 class="chapter-title">Pourquoi 6-8 reps et 4 séries : la logique <em>anti-fatigue.</em></h2>
+      </div>
+      <div class="content">
+        <p>La plupart des programmes pour débutants prescrivent 10, 12, voire 15 répétitions par série. <strong>C'est une erreur méthodologique majeure quand on démarre.</strong></p>
+
+        <p class="pull-quote">La fatigue est l'ennemie de l'apprentissage.</p>
+
+        <p>Quand vous découvrez un mouvement, votre cerveau construit une <strong>carte motrice</strong> — le circuit neurologique qui vous permettra d'exécuter le geste avec précision, puis avec force. Chaque répétition mal exécutée enregistre un mauvais schéma. Chaque répétition fatiguée l'enregistre en double.</p>
+
+        <h3>Concrètement, dans une série de 12 répétitions</h3>
+
+        <div class="table-wrap">
+          <table class="table-clean">
+            <tr><th>Répétitions</th><th>Qualité technique</th></tr>
+            <tr><td><strong>3 premières</strong></td><td>Techniquement propres ✓</td></tr>
+            <tr><td><strong>4 suivantes</strong></td><td>Acceptables</td></tr>
+            <tr><td><strong>5 dernières</strong></td><td>Systématiquement dégradées : dos arrondi, genoux qui tombent, respiration bloquée ✗</td></tr>
+          </table>
+        </div>
+
+        <p>Vous venez de passer <strong>5 répétitions à apprendre de mauvais gestes</strong>. Bilan : vous avez fatigué votre corps sans progresser techniquement.</p>
+
+        <h3>Ma règle pour tout pratiquant qui démarre</h3>
+
+        <div class="table-wrap">
+          <table class="table-clean">
+            <tr><th>Type d'exercice</th><th>Répétitions max</th><th>Séries</th></tr>
+            <tr><td><strong>Poids du corps</strong><br><span style="font-size:.85rem;color:var(--text-mute)">Pompes, planche, suspension</span></td><td style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--gold)">6 à 8</td><td style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--gold)">4</td></tr>
+            <tr><td><strong>Charges libres</strong><br><span style="font-size:.85rem;color:var(--text-mute)">Kettlebell, haltères</span></td><td style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--gold)">4 à 6</td><td style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--gold)">4</td></tr>
+          </table>
+        </div>
+
+        <p><strong>Repos entre séries : 90 à 120 secondes minimum.</strong> Vous devez arriver à la série suivante frais, pas essoufflé.</p>
+
+        <div class="callout">
+          <div class="callout-title">Règle absolue</div>
+          <p>Arrêtez la série dès que la technique se dégrade, même si vous n'avez fait que 3 reps au lieu de 6. <strong>Une rep propre vaut dix reps bâclées.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- SÉANCE A                                                     -->
+    <!-- ========================================================== -->
+    <section class="chapter reveal" id="seance-a">
+      <div class="chapter-head">
+        <div class="chapter-num">A</div>
+        <h2 class="chapter-title">Séance A — S'accroupir · Pousser · <em>Tirer.</em></h2>
+      </div>
+      <div class="content">
+
+        <div class="callout">
+          <div class="callout-title">⚡ La logique des 2 séances</div>
+          <p><strong>Chaque séance est full-body</strong> — elle travaille votre corps dans son ensemble, pas "un muscle isolé". Ce qui change entre A et B, ce sont les <strong>patterns de mouvement</strong> dominants.</p>
+          <p>Sur une semaine (2 à 3 séances), vous couvrez les <strong>6 patterns fondamentaux</strong> : s'accroupir · charnière de hanche · pousser · tirer · se déplacer · gainer. Rien n'est oublié, rien n'est redondant.</p>
+          <p style="margin-top:.5rem"><strong>Séance A</strong> — accent sur : s'accroupir (squat), pousser (pompes), tirer (tirage), se déplacer (fentes), gainer (planche).<br>
+          <strong>Séance B</strong> — accent sur : charnière de hanche (soulevé de terre), pousser au-dessus (press), tirer unilatéral (rowing), extension de hanche (pont fessier).</p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table-clean">
+            <tr><th>Fréquence</th><td>2-3 séances/semaine en alternant A et B</td></tr>
+            <tr><th>Durée</th><td>40-50 min avec échauffement</td></tr>
+            <tr><th>Échauffement</th><td>2 min marche + 10 rotations épaules + 10 squats PDC + 10 pompes mur + 10 fentes</td></tr>
+          </table>
+        </div>
+
+        <div class="callout">
+          <div class="callout-title">⚡ Charges de départ (indicatives)</div>
+          <p><strong>Démarrage absolu :</strong> kettlebell 6-8 kg · haltères 3-5 kg<br>
+          <strong>Déjà actif :</strong> kettlebell 8-12 kg · haltères 5-8 kg<br>
+          <strong>Intermédiaire :</strong> kettlebell 12-16 kg · haltères 8-12 kg</p>
+          <p style="font-size:.85rem;color:var(--text-mute);font-style:italic">La charge exacte adaptée à vous sera déterminée lors de votre bilan offert au studio.</p>
+        </div>
+
+        <!-- EX 1 -->
+        <div class="exercise">
+          <div class="exercise-head">
+            <div class="exercise-num">01</div>
+            <div class="exercise-title-block">
+              <div class="exercise-title">Goblet Squat (kettlebell)</div>
+              <div class="exercise-muscles">Quadriceps · Fessiers · Tronc</div>
+            </div>
+          </div>
+          <div class="exercise-meta">
+            <div class="exercise-meta-item"><span class="label">Séries</span><span class="value">4 × 4-6 reps</span></div>
+            <div class="exercise-meta-item"><span class="label">Repos</span><span class="value">90-120 sec</span></div>
+          </div>
+          <div class="exercise-section">
+            <h5>Exécution</h5>
+            <p>Tenez la kettlebell contre la poitrine à deux mains, coudes sous la cloche. Pieds largeur d'épaules, pointes légèrement vers l'extérieur. Descendez en poussant les fesses vers l'arrière, genoux alignés sur les pointes de pieds. Cuisses parallèles au sol. Poussez dans les talons pour remonter.</p>
+          </div>
+          <div class="exercise-section warning">
+            <h5>⚠ Erreur fréquente</h5>
+            <p>Genoux qui rentrent vers l'intérieur à la remontée. Poussez-les légèrement vers l'extérieur.</p>
+          </div>
+        </div>
+
+        <!-- EX 2 -->
+        <div class="exercise">
+          <div class="exercise-head">
+            <div class="exercise-num">02</div>
+            <div class="exercise-title-block">
+              <div class="exercise-title">Pompes sur les genoux</div>
+              <div class="exercise-muscles">Pectoraux · Triceps · Épaules</div>
+            </div>
+          </div>
+          <div class="exercise-meta">
+            <div class="exercise-meta-item"><span class="label">Séries</span><span class="value">4 × 6-8 reps</span></div>
+            <div class="exercise-meta-item"><span class="label">Repos</span><span class="value">90 sec</span></div>
+          </div>
+          <div class="exercise-section">
+            <h5>Exécution</h5>
+            <p>Mains largeur épaules, genoux au sol, corps droit de la tête aux genoux. Descendez la poitrine vers le sol en contrôlant sur 2-3 secondes. Poussez pour remonter.</p>
+          </div>
+          <div class="exercise-section warning">
+            <h5>⚠ Erreur fréquente</h5>
+            <p>Cambrure du bas du dos. Gardez les abdos contractés pendant toute la durée du mouvement.</p>
+          </div>
+          <div class="exercise-section">
+            <h5>↗ Progression</h5>
+            <p>Quand 4×8 sont propres sur les genoux, passez aux pompes sur les pieds avec mains surélevées.</p>
+          </div>
+        </div>
+
+        <!-- EX 3 -->
+        <div class="exercise">
+          <div class="exercise-head">
+            <div class="exercise-num">03</div>
+            <div class="exercise-title-block">
+              <div class="exercise-title">Tirage TRX (ou Ring Row)</div>
+              <div class="exercise-muscles">Dos · Biceps</div>
+            </div>
+          </div>
+          <div class="exercise-meta">
+            <div class="exercise-meta-item"><span class="label">Séries</span><span class="value">4 × 6-8 reps</span></div>
+            <div class="exercise-meta-item"><span class="label">Repos</span><span class="value">90 sec</span></div>
+          </div>
+          <div class="exercise-section">
+            <h5>Exécution</h5>
+            <p>Saisissez les poignées TRX, bras tendus, corps droit incliné vers l'arrière. Tirez les poignées vers la poitrine en rapprochant les omoplates, coudes près du corps.</p>
+          </div>
+          <div class="exercise-section warning">
+            <h5>⚠ Erreur fréquente</h5>
+            <p>Tirer avec les bras uniquement. Pensez à "pincer" vos omoplates en haut du mouvement.</p>
+          </div>
+          <div class="exercise-section">
+            <h5>Alternative sans TRX</h5>
+            <p>Rowing kettlebell à un bras (appui sur banc).</p>
+          </div>
+        </div>
+
+        <!-- EX 4 -->
+        <div class="exercise">
+          <div class="exercise-head">
+            <div class="exercise-num">04</div>
+            <div class="exercise-title-block">
+              <div class="exercise-title">Fentes marchées</div>
+              <div class="exercise-muscles">Quadriceps · Fessiers · Équilibre</div>
+            </div>
+          </div>
+          <div class="exercise-meta">
+            <div class="exercise-meta-item"><span class="label">Séries</span><span class="value">4 × 4-6 / jambe</span></div>
+            <div class="exercise-meta-item"><span class="label">Repos</span><span class="value">90-120 sec</span></div>
+          </div>
+          <div class="exercise-section">
+            <h5>Exécution</h5>
+            <p>Debout, pieds joints. Avancez une jambe et descendez jusqu'à ce que le genou arrière effleure le sol. Genou avant à 90° au-dessus de la cheville. Poussez sur la jambe avant pour enchaîner avec l'autre côté.</p>
+          </div>
+          <div class="exercise-section warning">
+            <h5>⚠ Erreur fréquente</h5>
+            <p>Torse penché vers l'avant. Gardez le buste droit tout le long.</p>
+          </div>
+        </div>
+
+        <!-- EX 5 -->
+        <div class="exercise">
+          <div class="exercise-head">
+            <div class="exercise-num">05</div>
+            <div class="exercise-title-block">
+              <div class="exercise-title">Planche abdominale</div>
+              <div class="exercise-muscles">Core · Gainage global</div>
+            </div>
+          </div>
+          <div class="exercise-meta">
+            <div class="exercise-meta-item"><span class="label">Séries</span><span class="value">4 × 20-30 sec</span></div>
+            <div class="exercise-meta-item"><span class="label">Repos</span><span class="value">90 sec</span></div>
+          </div>
+          <div class="exercise-section">
+            <h5>Exécution</h5>
+            <p>Coudes sous les épaules, avant-bras au sol, corps droit de la tête aux talons. Contractez abdos, fessiers et cuisses. Respirez calmement.</p>
+          </div>
+          <div class="exercise-section warning">
+            <h5>⚠ Erreur fréquente</h5>
+            <p>Fesses relevées ou affaissées. Imaginez une ligne droite tête-talons.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- SÉANCE B                                                     -->
+    <!-- ========================================================== -->
+    <section class="chapter reveal" id="seance-b">
+      <div class="chapter-head">
+        <div class="chapter-num">B</div>
+        <h2 class="chapter-title">Séance B — Charnière de hanche · Pousser au-dessus · <em>Tirer unilatéral.</em></h2>
+      </div>
+      <div class="content">
+
+        <div class="callout">
+          <div class="callout-title">⚡ Rappel · Les patterns de la semaine</div>
+          <p>La Séance B complète la Séance A sur les patterns <strong>non dominants</strong> de la première séance. Ensemble, elles couvrent tout : tirer vertical et horizontal, pousser horizontal et vertical, squat et charnière, déplacement et stabilité. <strong>Aucun groupe musculaire n'est négligé sur une semaine complète.</strong></p>
+        </div>
+        <!-- EX 1 -->
+        <div class="exercise">
+          <div class="exercise-head">
+            <div class="exercise-num">01</div>
+            <div class="exercise-title-block">
+              <div class="exercise-title">Soulevé de terre kettlebell</div>
+              <div class="exercise-muscles">Ischio-jambiers · Fessiers · Lombaires</div>
+            </div>
+          </div>
+          <div class="exercise-meta">
+            <div class="exercise-meta-item"><span class="label">Séries</span><span class="value">4 × 4-6 reps</span></div>
+            <div class="exercise-meta-item"><span class="label">Repos</span><span class="value">90-120 sec</span></div>
+          </div>
+          <div class="exercise-section">
+            <h5>Exécution</h5>
+            <p>Kettlebell entre les pieds, largeur de hanches. Descendez en poussant les fesses vers l'arrière (charnière de hanche), dos droit, genoux légèrement fléchis. Saisissez la poignée à deux mains. Poussez dans les talons, remontez en contractant les fessiers en fin de mouvement.</p>
+          </div>
+          <div class="exercise-section warning">
+            <h5>⚠ Erreur fréquente</h5>
+            <p>Dos arrondi. Gardez la poitrine ouverte, regard à 2 mètres devant.</p>
+          </div>
+        </div>
+
+        <!-- EX 2 — PRESS + MARCHE ⭐ -->
+        <div class="exercise signature">
+          <div class="exercise-head">
+            <div class="exercise-num">02</div>
+            <div class="exercise-title-block">
+              <span class="exercise-badge">★ Exercice signature</span>
+              <div class="exercise-title">Press + Marche bras au-dessus de la tête</div>
+              <div class="exercise-muscles">Épaules · Core · Stabilité · Coordination</div>
+            </div>
+          </div>
+          <div class="exercise-meta">
+            <div class="exercise-meta-item"><span class="label">Séries</span><span class="value">4 × (press + marche)</span></div>
+            <div class="exercise-meta-item"><span class="label">Format</span><span class="value">10m A/R ou 10 montées genoux</span></div>
+            <div class="exercise-meta-item"><span class="label">Repos</span><span class="value">90-120 sec</span></div>
+          </div>
+          <div class="exercise-section">
+            <h5>Exécution</h5>
+            <p>Kettlebell dans une main en position rack (contre l'épaule, coude sous la main). Poussez-la verticalement au-dessus de la tête, bras tendu, biceps contre l'oreille. Verrouillez le coude.</p>
+          </div>
+          <div class="exercise-section">
+            <h5>Puis au choix</h5>
+            <p>→ <strong>Option A — Marche</strong> : 10 m aller + 10 m retour (20 m), tronc gainé, regard devant.<br>
+            → <strong>Option B — Montées de genoux sur place</strong> : 10 montées lentes (5/jambe) si espace limité.</p>
+          </div>
+          <div class="exercise-section">
+            <h5>Pourquoi cet exercice est exceptionnel</h5>
+            <p>Il combine <strong>force des épaules, gainage profond et coordination</strong>. L'un des exercices les plus complets qui existe.</p>
+          </div>
+          <div class="exercise-section warning">
+            <h5>⚠ Erreurs fréquentes</h5>
+            <p>Cambrure du bas du dos · Bras qui penche (doit rester vertical, biceps contre l'oreille) · Regarder la kettlebell (fixez un point devant)</p>
+          </div>
+          <div class="exercise-section">
+            <h5>Charges recommandées</h5>
+            <p>Commencez <strong>très léger</strong> (4-6 kg démarrage, 6-8 kg actif). Plus exigeant qu'il n'y paraît.</p>
+          </div>
+        </div>
+
+        <!-- EX 3 -->
+        <div class="exercise">
+          <div class="exercise-head">
+            <div class="exercise-num">03</div>
+            <div class="exercise-title-block">
+              <div class="exercise-title">Rowing kettlebell unilatéral</div>
+              <div class="exercise-muscles">Dos · Biceps</div>
+            </div>
+          </div>
+          <div class="exercise-meta">
+            <div class="exercise-meta-item"><span class="label">Séries</span><span class="value">4 × 4-6 / bras</span></div>
+            <div class="exercise-meta-item"><span class="label">Repos</span><span class="value">90 sec</span></div>
+          </div>
+          <div class="exercise-section">
+            <h5>Exécution</h5>
+            <p>Kettlebell dans une main, l'autre main en appui sur un banc ou une chaise. Dos parallèle au sol. Tirez la kettlebell vers la hanche en rapprochant l'omoplate de la colonne, coude près du corps.</p>
+          </div>
+          <div class="exercise-section warning">
+            <h5>⚠ Erreur fréquente</h5>
+            <p>Rotation du torse à chaque répétition. Gardez les épaules parallèles au sol.</p>
+          </div>
+        </div>
+
+        <!-- EX 4 — PONT FESSIER UNILATÉRAL ⭐ -->
+        <div class="exercise signature">
+          <div class="exercise-head">
+            <div class="exercise-num">04</div>
+            <div class="exercise-title-block">
+              <span class="exercise-badge">★ Version unilatérale</span>
+              <div class="exercise-title">Pont fessier unilatéral</div>
+              <div class="exercise-muscles">Fessiers · Ischio-jambiers · Core</div>
+            </div>
+          </div>
+          <div class="exercise-meta">
+            <div class="exercise-meta-item"><span class="label">Séries</span><span class="value">4 × 6-8 / jambe</span></div>
+            <div class="exercise-meta-item"><span class="label">Repos</span><span class="value">90 sec</span></div>
+          </div>
+          <div class="exercise-section">
+            <h5>Exécution</h5>
+            <p>Allongé sur le dos, un genou fléchi pied au sol, <strong>l'autre jambe tendue à l'horizontale</strong>. Poussez dans le talon de la jambe ancrée et soulevez les hanches jusqu'à former une ligne droite épaule-hanche-genou d'appui. Contractez fortement le fessier en haut (pause 1 sec). Redescendez lentement <strong>sans poser les hanches au sol entre les répétitions</strong>.</p>
+          </div>
+          <div class="exercise-section">
+            <h5>Pourquoi en unilatéral</h5>
+            <p>Isole réellement chaque fessier · Révèle et corrige les asymétries · Sollicite le core en anti-rotation · Prépare aux mouvements de performance.</p>
+          </div>
+          <div class="exercise-section warning">
+            <h5>⚠ Erreurs fréquentes</h5>
+            <p>Hanches qui basculent (gardez le bassin horizontal) · Hyperextension lombaire en haut (ligne droite, pas cambrée) · Jambe tendue qui tombe</p>
+          </div>
+          <div class="exercise-section">
+            <h5>↗ Progression</h5>
+            <p>Une fois 4×8 maîtrisés des deux côtés, ajoutez une kettlebell sur la hanche de la jambe d'appui.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- RÉCUPÉRATION                                                 -->
+    <!-- ========================================================== -->
+    <section class="chapter reveal" id="recup">
+      <div class="chapter-head">
+        <div class="chapter-num">✦</div>
+        <h2 class="chapter-title">Décompression & <em>récupération.</em></h2>
+      </div>
+      <div class="content">
+        <p>Terminez toujours votre séance par cet exercice. Il décompresse la colonne vertébrale sollicitée pendant le soulevé de terre et le press, et améliore la posture sur le long terme.</p>
+
+        <div class="exercise">
+          <div class="exercise-head">
+            <div class="exercise-num">05</div>
+            <div class="exercise-title-block">
+              <div class="exercise-title">Suspension active à la barre</div>
+              <div class="exercise-muscles">Core · Grip · Épaules · Décompression</div>
+            </div>
+          </div>
+          <div class="exercise-meta">
+            <div class="exercise-meta-item"><span class="label">Séries</span><span class="value">4 × 15-30 sec</span></div>
+            <div class="exercise-meta-item"><span class="label">Repos</span><span class="value">90 sec</span></div>
+          </div>
+          <div class="exercise-section">
+            <h5>Exécution</h5>
+            <p>Suspendu à une barre, mains largeur d'épaules. Engagez les épaules (tirez-les vers le bas, éloignez-les des oreilles). Contractez les abdos. Respirez calmement.</p>
+          </div>
+          <div class="exercise-section warning">
+            <h5>⚠ Erreur fréquente</h5>
+            <p>Suspension passive (épaules collées aux oreilles). L'objectif est d'être actif, pas flasque.</p>
+          </div>
+          <div class="exercise-section">
+            <h5>✦ Bénéfice bonus</h5>
+            <p>La suspension décompresse la colonne vertébrale après les exercices lourds. Excellente pour soulager les tensions lombaires.</p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div class="callout-title">🧘 Étirements post-séance (5 min)</div>
+          <p>Après chaque séance, consacrez 5 minutes à vous étirer : ischios, quadriceps, fessiers, pectoraux, dos. Ce n'est pas optionnel — c'est ce qui permet à votre corps d'assimiler le travail et de réduire les courbatures.</p>
+          <p>Le détail de ces étirements + le protocole complet est dans le <strong>Parcours Fondations</strong> ci-dessous.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- PLAN 4 SEMAINES                                              -->
+    <!-- ========================================================== -->
+    <section class="chapter reveal" id="plan">
+      <div class="chapter-head">
+        <div class="chapter-num">🎯</div>
+        <h2 class="chapter-title">Votre plan <em>4 semaines.</em></h2>
+      </div>
+      <div class="content">
+        <p>Les 4 premières semaines posent les bases. Voici comment progresser intelligemment, sans sauter d'étape.</p>
+
+        <div class="table-wrap">
+          <table class="table-clean">
+            <tr><th style="width:28%">Semaine</th><th>Objectif</th></tr>
+            <tr>
+              <td style="font-family:'Bebas Neue',sans-serif;font-size:1.15rem;color:var(--gold);letter-spacing:.06em">S1 · Apprentissage</td>
+              <td>2 séances (A + B). Charges <strong>très légères</strong>. Focus 100% <strong>technique</strong>. Objectif : 4 séries × 4 reps partout.</td>
+            </tr>
+            <tr>
+              <td style="font-family:'Bebas Neue',sans-serif;font-size:1.15rem;color:var(--gold);letter-spacing:.06em">S2 · Consolidation</td>
+              <td>2-3 séances. Mêmes charges ou +2 kg max. Passez de 4 reps à 5 reps.</td>
+            </tr>
+            <tr>
+              <td style="font-family:'Bebas Neue',sans-serif;font-size:1.15rem;color:var(--gold);letter-spacing:.06em">S3 · Surcharge</td>
+              <td>3 séances. 4×6 <strong>OU</strong> +2 kg et retour à 4×4. <strong>Une seule variable à la fois.</strong></td>
+            </tr>
+            <tr>
+              <td style="font-family:'Bebas Neue',sans-serif;font-size:1.15rem;color:var(--gold);letter-spacing:.06em">S4 · Évaluation</td>
+              <td>3 séances. Stabilisez. En fin de semaine : <strong>photos · mesures · bilan sensations</strong>. Moment idéal pour votre bilan au studio.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- PARTIE II — PARCOURS FONDATIONS                              -->
+    <!-- ========================================================== -->
+    <div class="part-head reveal">
+      <div class="part-head-num">II</div>
+      <div class="part-head-block">
+        <div class="part-head-label">Deuxième partie</div>
+        <h2>Parcours <em>Fondations.</em></h2>
+      </div>
+    </div>
+
+    <section class="reveal" style="padding-top:1rem">
+      <div class="content">
+        <p class="pull-quote">Quand un nouveau client arrive au studio, 80% d'entre eux pensent qu'il leur manque un bon programme d'entraînement. En réalité, dans 80% des cas, ce qui leur manque, ce sont les fondations.</p>
+
+        <p>Un programme d'entraînement parfait ne donnera aucun résultat si vous dormez 5 heures par nuit, si votre alimentation ne soutient pas la récupération musculaire, ou si votre stress chronique fait exploser votre cortisol.</p>
+
+        <p>À l'inverse, <strong>une personne qui dort bien, mange correctement et gère son stress progressera de façon spectaculaire avec un programme basique</strong>. C'est la leçon la plus importante que j'ai apprise en coaching : <strong>l'entraînement est la cerise sur le gâteau. Le gâteau, c'est ce qui suit.</strong></p>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- MODULE 01 — SOMMEIL                                          -->
+    <!-- ========================================================== -->
+    <section class="chapter reveal" id="mod1">
+      <div class="chapter-head">
+        <div class="chapter-num">01</div>
+        <h2 class="chapter-title">Module Sommeil — votre <em>super-pouvoir.</em></h2>
+      </div>
+      <div class="content">
+        <p>Si je devais ne garder qu'<strong>un seul levier</strong> pour améliorer la santé et la composition corporelle de mes clients, ce serait le sommeil. Pas l'entraînement. Pas la nutrition. <strong>Le sommeil.</strong></p>
+
+        <h3>Ce qui se passe pendant votre sommeil profond</h3>
+        <ol class="numbered-list">
+          <li><div class="num">→</div><div class="content-li"><h4>Production de 70% de l'hormone de croissance</h4><p>Cruciale pour la réparation musculaire et la combustion des graisses.</p></div></li>
+          <li><div class="num">→</div><div class="content-li"><h4>Régulation du cortisol</h4><p>L'hormone du stress qui, en excès, favorise le stockage des graisses abdominales.</p></div></li>
+          <li><div class="num">→</div><div class="content-li"><h4>Équilibre leptine/ghréline</h4><p>Vos hormones de faim et de satiété — essentielles pour contrôler l'appétit.</p></div></li>
+          <li><div class="num">→</div><div class="content-li"><h4>Consolidation motrice</h4><p>Votre cerveau intègre les mouvements appris à l'entraînement.</p></div></li>
+        </ol>
+
+        <div class="callout warning">
+          <div class="callout-title">⚠ Ce qui arrive quand vous dormez mal</div>
+          <p>Cortisol qui reste élevé → plus de graisse abdominale · Leptine qui baisse et ghréline qui augmente → plus de faim et d'envie de sucre · Performances à l'entraînement −10 à −30% · Capacité à perdre du gras divisée par deux.</p>
+        </div>
+
+        <h3>Combien d'heures : 7 à 9 par nuit</h3>
+        <p>Les besoins individuels varient. Pour identifier votre juste besoin, testez ceci pendant 2 semaines :</p>
+        <ol class="numbered-list">
+          <li><div class="num">01</div><div class="content-li"><h4>Heure de coucher fixe</h4><p>Couchez-vous à la même heure chaque soir pendant 14 jours, sans réveil le matin. L'heure à laquelle vous vous réveillez naturellement = votre besoin réel.</p></div></li>
+          <li><div class="num">02</div><div class="content-li"><h4>Le test des 15h</h4><p>Évaluez votre énergie chaque après-midi. Un "coup de pompe" marqué = signe de dette de sommeil.</p></div></li>
+        </ol>
+
+        <h3>Les 7 règles d'hygiène du sommeil</h3>
+        <ol class="numbered-list">
+          <li><div class="num">01</div><div class="content-li"><h4>Régularité horaire</h4><p>Mêmes heures chaque jour (tolérance 1h max), week-end inclus.</p></div></li>
+          <li><div class="num">02</div><div class="content-li"><h4>Écrans coupés 1h avant</h4><p>La lumière bleue supprime la mélatonine. Livre, conversation, pas d'écran.</p></div></li>
+          <li><div class="num">03</div><div class="content-li"><h4>Chambre fraîche, sombre, silencieuse</h4><p>Idéalement 18-20°C. Rideaux occultants. Bouchons d'oreilles si besoin.</p></div></li>
+          <li><div class="num">04</div><div class="content-li"><h4>Pas de caféine après 14h</h4><p>Demi-vie de 6-8h : un café à 15h est encore à moitié actif à 21h.</p></div></li>
+          <li><div class="num">05</div><div class="content-li"><h4>Pas d'alcool le soir</h4><p>L'alcool détruit la qualité du sommeil profond. Verre occasionnel OK, habitude non.</p></div></li>
+          <li><div class="num">06</div><div class="content-li"><h4>Dernier repas 2-3h avant le coucher</h4><p>Se coucher le ventre plein perturbe sommeil et récupération.</p></div></li>
+          <li><div class="num">07</div><div class="content-li"><h4>Routine d'apaisement 30-60 min avant</h4><p>Douche chaude, lecture, étirements doux, méditation, respiration.</p></div></li>
+        </ol>
+
+        <h3>Dormir à Kourou : spécificités climat tropical</h3>
+        <p>Dormir en Guyane, c'est un défi que n'ont pas les métropolitains. La chaleur nocturne, l'humidité, les moustiques — tout joue contre un sommeil de qualité.</p>
+
+        <div class="callout">
+          <div class="callout-title">Les ajustements clés</div>
+          <p><strong>1. Température chambre prioritaire :</strong> climatisation 22-24°C (pas plus bas), ou ventilateur plafond + appoint. Draps coton léger ou lin, jamais synthétique.<br>
+          <strong>2. Humidité :</strong> déshumidificateur utile surtout en saison des pluies.<br>
+          <strong>3. Moustiquaire non négociable :</strong> se réveiller à 3h à cause d'un moustique = nuit foutue.<br>
+          <strong>4. Sieste tropicale cadrée :</strong> max 20-30 min, avant 15h.<br>
+          <strong>5. Lumière matinale :</strong> 10-15 min à l'extérieur dès le réveil = rythme circadien recalé.</p>
+        </div>
+
+        <div class="callout">
+          <div class="callout-title">Les 3 règles à retenir</div>
+          <p><strong>01</strong> · Couchez-vous et levez-vous à la même heure chaque jour<br>
+          <strong>02</strong> · Coupez tous les écrans 1 heure avant le coucher<br>
+          <strong>03</strong> · Baissez la température de votre chambre en dessous de 24°C</p>
+          <p>Ces 3 règles seules transformeront votre sommeil en 2 semaines.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- MODULE 02 — NUTRITION                                        -->
+    <!-- ========================================================== -->
+    <section class="chapter reveal" id="mod2">
+      <div class="chapter-head">
+        <div class="chapter-num">02</div>
+        <h2 class="chapter-title">Module Nutrition — <em>l'essentiel.</em></h2>
+      </div>
+      <div class="content">
+        <p>La nutrition pour la recomposition corporelle n'est pas compliquée — elle est juste <strong>souvent mal expliquée</strong>.</p>
+
+        <p>Oubliez les régimes à la mode (keto, paleo, intermittent, sans gluten…). Oubliez les applications qui comptent chaque calorie. Concentrez-vous sur <strong>les 3 principes fondamentaux</strong> qui font 90% des résultats.</p>
+
+        <h3>Les 3 macronutriments et leurs rôles</h3>
+
+        <ol class="numbered-list">
+          <li><div class="num">01</div><div class="content-li"><h4>Protéines — Les constructeurs</h4><p>Réparent et construisent vos muscles. Assurent la satiété. <strong>Sans protéines suffisantes, impossible de gagner du muscle.</strong></p></div></li>
+          <li><div class="num">02</div><div class="content-li"><h4>Glucides — Le carburant</h4><p>Fournissent l'énergie pour vos séances et la récupération. Contrairement au mythe, ils ne sont <strong>pas votre ennemi</strong>.</p></div></li>
+          <li><div class="num">03</div><div class="content-li"><h4>Lipides — Le régulateur hormonal</h4><p>Fonctionnement hormonal, absorption des vitamines A, D, E, K, santé cellulaire.</p></div></li>
+        </ol>
+
+        <h3>Proportions simples : la méthode de l'assiette</h3>
+        <div class="table-wrap">
+          <table class="table-clean">
+            <tr><th>Macronutriment</th><th>Part</th><th>Repère visuel</th></tr>
+            <tr><td><strong>Protéines</strong></td><td>1/4 à 1/3</td><td>Une paume de main</td></tr>
+            <tr><td><strong>Glucides complexes</strong></td><td>1/4 à 1/3</td><td>Un poing fermé</td></tr>
+            <tr><td><strong>Légumes</strong></td><td>La moitié</td><td>Les deux mains en coupe</td></tr>
+            <tr><td><strong>Lipides sains</strong></td><td>1-2 c. à soupe</td><td>Le bout du pouce</td></tr>
+          </table>
+        </div>
+        <p>Cette méthode "assiette équilibrée" est 100× plus efficace qu'une application de comptage de calories, pour une raison simple : <strong>vous pouvez l'appliquer à vie</strong>.</p>
+
+        <h3>Les protéines : combien par jour</h3>
+
+        <p>Pour une recomposition corporelle avec entraînement régulier : <strong>1,6 à 2 grammes de protéines par kilo de poids corporel et par jour.</strong></p>
+
+        <div class="table-wrap">
+          <table class="table-clean">
+            <tr><th>Poids corporel</th><th>Protéines/jour</th></tr>
+            <tr><td>55 kg</td><td>88 à 110 g</td></tr>
+            <tr><td>65 kg</td><td>104 à 130 g</td></tr>
+            <tr><td>75 kg</td><td>120 à 150 g</td></tr>
+            <tr><td>85 kg</td><td>136 à 170 g</td></tr>
+          </table>
+        </div>
+
+        <p>Répartissez sur la journée : idéalement 25-40 g par repas × 3-4 repas.</p>
+
+        <h3>Sources de protéines (focus Guyane)</h3>
+
+        <div class="callout">
+          <div class="callout-title">Sources animales (protéines complètes)</div>
+          <p>Poulet : 22-25 g/100 g · Poisson blanc (acoupa, machoiron, dorade) : 20-22 g/100 g · Poisson gras (thon, saumon) : 22-25 g/100 g · Œufs : 6-7 g/œuf · Bœuf maigre : 25-28 g/100 g · Yaourt grec nature : 8-10 g/100 g · Fromage blanc : 8-11 g/100 g</p>
+        </div>
+
+        <div class="callout">
+          <div class="callout-title">Sources végétales</div>
+          <p>Lentilles cuites : 9 g/100 g · Haricots rouges cuits : 9 g/100 g · Tofu ferme : 12-15 g/100 g · Pois chiches : 8-9 g/100 g · Quinoa : 4 g/100 g</p>
+        </div>
+
+        <h3>Glucides et lipides : la vraie histoire</h3>
+
+        <p><strong>Les glucides ne font pas grossir.</strong> Ce qui fait grossir, c'est un excès calorique global — pas une catégorie d'aliments isolée.</p>
+
+        <p><strong>Glucides complexes à privilégier (80% de vos glucides) :</strong> riz complet, patate douce, igname, manioc (local !), avoine, quinoa, pain complet, banane plantain, légumineuses.</p>
+
+        <p><strong>Lipides sains :</strong> avocat (local !), huile d'olive extra vierge, poissons gras (oméga-3), noix/amandes, graines, œufs entiers. <strong>Nuance coco :</strong> huile de coco avec modération (1 c. à soupe max/jour).</p>
+
+        <h3>Journée type 100% Guyane</h3>
+
+        <div class="callout">
+          <div class="callout-title">Exemple 65 kg · recomposition · ≈1800 kcal · 120g protéines</div>
+          <p><strong>Petit-déjeuner (7h) :</strong> 2 œufs brouillés + 1 tranche pain complet + ½ avocat + tomates + café → 28 g protéines</p>
+          <p><strong>Déjeuner (12h30) :</strong> 120 g poulet grillé (ou acoupa) + 150 g patate douce + légumes créoles (épinards pays, christophines) + 1 c. huile d'olive → 32 g protéines</p>
+          <p><strong>Collation (17h) :</strong> 1 yaourt grec (200 g) + 1 banane + 20 g amandes → 20 g protéines</p>
+          <p><strong>Dîner (19h30) :</strong> 130 g saumon (ou thon frais) + 100 g lentilles + grosse salade + olives → 40 g protéines</p>
+        </div>
+
+        <h3>Hydratation : combien, quoi, quand</h3>
+
+        <p>En Guyane, la recommandation classique de 1,5L/jour est <strong>largement insuffisante</strong>.</p>
+
+        <div class="table-wrap">
+          <table class="table-clean">
+            <tr><th>Contexte</th><th>Volume</th></tr>
+            <tr><td>Jours sans entraînement</td><td>2,5 à 3 L</td></tr>
+            <tr><td>Jours d'entraînement</td><td>3,5 à 4 L</td></tr>
+            <tr><td>Forte chaleur + entraînement</td><td>jusqu'à 5 L</td></tr>
+          </table>
+        </div>
+
+        <p><strong>À privilégier :</strong> eau plate, thé, tisanes, eau de coco fraîche (excellente post-entraînement), eau citronnée.<br>
+        <strong>À limiter :</strong> sodas (40 g de sucre/canette), jus industriels, boissons énergisantes, alcool.</p>
+
+        <h3>Les 5 erreurs à éviter absolument</h3>
+
+        <ol class="numbered-list">
+          <li><div class="num">01</div><div class="content-li"><h4>Manger trop peu</h4><p>Sous 1400 kcal/jour = métabolisme ralenti, muscle détruit, reprise garantie. Mieux vaut un léger déficit durable (-200 à -300 kcal/jour).</p></div></li>
+          <li><div class="num">02</div><div class="content-li"><h4>Supprimer les glucides</h4><p>Keto strict = performances −30%, muscle compromis.</p></div></li>
+          <li><div class="num">03</div><div class="content-li"><h4>Avoir peur des graisses</h4><p>Les graisses saines sont essentielles à votre équilibre hormonal.</p></div></li>
+          <li><div class="num">04</div><div class="content-li"><h4>Oublier les protéines au petit-déjeuner</h4><p>100% glucides = pic glycémie, coup de pompe 10h, envie sucre 16h.</p></div></li>
+          <li><div class="num">05</div><div class="content-li"><h4>Négliger les calories liquides</h4><p>Latté sucré, jus, soda, apéro = 500-700 kcal qui passent inaperçues.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- MODULE 03 — STRESS & RÉCUPÉRATION                            -->
+    <!-- ========================================================== -->
+    <section class="chapter reveal" id="mod3">
+      <div class="chapter-head">
+        <div class="chapter-num">03</div>
+        <h2 class="chapter-title">Module Stress & <em>récupération.</em></h2>
+      </div>
+      <div class="content">
+        <p class="pull-quote">Vous ne construisez pas de muscle pendant l'entraînement. Vous construisez du muscle pendant que vous récupérez.</p>
+
+        <p>L'entraînement crée un stress musculaire — des micro-lésions. Ce sont la nutrition et le repos qui <strong>réparent ces lésions et construisent le muscle plus fort qu'avant</strong>.</p>
+
+        <h3>Jours de repos : combien et comment les utiliser</h3>
+
+        <div class="table-wrap">
+          <table class="table-clean">
+            <tr><th>Séances muscu/semaine</th><th>Jours de repos</th></tr>
+            <tr><td>2 séances</td><td>5 jours</td></tr>
+            <tr><td>3 séances</td><td>4 jours</td></tr>
+            <tr><td>4 séances</td><td>3 jours</td></tr>
+          </table>
+        </div>
+
+        <p><strong>En démarrage : 2-3 séances/semaine maximum.</strong> Plus n'est pas mieux — votre corps a besoin d'assimiler.</p>
+
+        <h3>Repos total vs récupération active</h3>
+
+        <p><strong>Repos total (1-2 jours/semaine) :</strong> aucune activité planifiée, priorité sommeil et détente.</p>
+
+        <p><strong>Récupération active (autres jours) :</strong> activité légère qui stimule la circulation sans fatiguer les muscles :</p>
+
+        <ol class="numbered-list">
+          <li><div class="num">→</div><div class="content-li"><h4>Marche 30-45 min</h4><p>Parfaite le matin ou en fin de journée.</p></div></li>
+          <li><div class="num">→</div><div class="content-li"><h4>Vélo tranquille 30-45 min</h4><p>Cardio doux sans impact articulaire.</p></div></li>
+          <li><div class="num">→</div><div class="content-li"><h4>Natation douce 20-30 min</h4><p>Excellente en Guyane : piscine ou mer.</p></div></li>
+          <li><div class="num">→</div><div class="content-li"><h4>Yoga doux ou Pilates</h4><p>Bonus : améliore la mobilité.</p></div></li>
+          <li><div class="num">→</div><div class="content-li"><h4>Étirements 15-20 min</h4><p>Les étirements post-séance essentiels.</p></div></li>
+        </ol>
+
+        <div class="callout">
+          <div class="callout-title">Règle simple</div>
+          <p>Si vous finissez votre "récupération active" essoufflé et fatigué, c'était trop intense — vous avez créé une séance supplémentaire, pas une récupération.</p>
+        </div>
+
+        <h3>Les 5 étirements post-séance essentiels</h3>
+
+        <p>Tenez chaque position 30 secondes, sans rebond, en respirant profondément.</p>
+
+        <ol class="numbered-list">
+          <li><div class="num">01</div><div class="content-li"><h4>Ischios</h4><p>Jambe tendue sur un banc.</p></div></li>
+          <li><div class="num">02</div><div class="content-li"><h4>Quadriceps</h4><p>Pied attrapé derrière, genou vers le sol.</p></div></li>
+          <li><div class="num">03</div><div class="content-li"><h4>Fessiers</h4><p>Figure 4 couché, genou tiré vers la poitrine.</p></div></li>
+          <li><div class="num">04</div><div class="content-li"><h4>Dos</h4><p>Posture de l'enfant en yoga.</p></div></li>
+          <li><div class="num">05</div><div class="content-li"><h4>Pectoraux</h4><p>Bras contre un mur, rotation du torse.</p></div></li>
+        </ol>
+
+        <h3>Mobilité articulaire quotidienne (5 min)</h3>
+
+        <div class="callout">
+          <div class="callout-title">Routine matinale ou pré-séance</div>
+          <p>Rotations cervicales (5 dans chaque sens) · Rotations d'épaules (10 avant, 10 arrière) · Cat-Cow 10 reps (alternance dos creux/rond) · Rotations de hanches (10 chaque sens) · Rotations de chevilles (10 par pied).</p>
+          <p><strong>5 minutes par jour = 35 minutes par semaine = des articulations qui restent jeunes.</strong></p>
+        </div>
+
+        <h3>Gérer le stress quotidien</h3>
+
+        <p>Le stress chronique est <strong>aussi destructeur pour la composition corporelle qu'une mauvaise alimentation</strong>. Un cortisol élevé en permanence favorise le stockage de graisse abdominale, dégrade le sommeil, réduit la récupération.</p>
+
+        <h3>Les 4 techniques à intégrer au quotidien</h3>
+
+        <ol class="numbered-list">
+          <li><div class="num">01</div><div class="content-li"><h4>Cohérence cardiaque — 5 min × 3/jour</h4><p>5 sec inspiration / 5 sec expiration. 6 respirations/minute. Effet : baisse mesurable du cortisol en 5 minutes.</p></div></li>
+          <li><div class="num">02</div><div class="content-li"><h4>Marche extérieure — 15-20 min/jour</h4><p>Sans écouteurs, sans téléphone. Réduit stress et ruminations.</p></div></li>
+          <li><div class="num">03</div><div class="content-li"><h4>Méditation — 10 min/jour</h4><p>Petit Bambou, Calm, Headspace (versions gratuites). Vrai changement en 4-6 semaines.</p></div></li>
+          <li><div class="num">04</div><div class="content-li"><h4>Journaling — 5 min le soir</h4><p>3 phrases : accomplissement du jour · gratitude · intention pour demain.</p></div></li>
+        </ol>
+
+        <h3>Discipline > Motivation</h3>
+
+        <p class="pull-quote">La motivation est un mythe. Ce qui fait réussir, c'est la discipline — la capacité à agir même quand on n'en a pas envie.</p>
+
+        <p>La discipline ne se développe pas par la force de la volonté. Elle se construit par <strong>la mise en place d'habitudes</strong> qui rendent l'action automatique.</p>
+
+        <ol class="numbered-list">
+          <li><div class="num">01</div><div class="content-li"><h4>Planifiez — ne décidez pas au dernier moment</h4><p>Séances dans l'agenda comme des RDV médicaux. Vous n'y allez pas parce que vous en avez envie, mais parce que c'est dans l'agenda.</p></div></li>
+          <li><div class="num">02</div><div class="content-li"><h4>Simplifiez l'environnement</h4><p>Tenue et sac prêts la veille. Baskets à côté du lit.</p></div></li>
+          <li><div class="num">03</div><div class="content-li"><h4>Ancrez les nouvelles habitudes à des existantes</h4><p>"Après mon café du matin, j'enfile ma tenue." Méthode la plus puissante pour installer sans effort.</p></div></li>
+          <li><div class="num">04</div><div class="content-li"><h4>Soyez indulgent avec vous-même</h4><p>Règle d'or : <strong>ne jamais rater 2 fois de suite.</strong> Une séance ratée n'est rien. Deux, c'est le début d'une dérive.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- SEMAINE TYPE                                                 -->
+    <!-- ========================================================== -->
+    <section class="chapter reveal" id="semaine">
+      <div class="chapter-head">
+        <div class="chapter-num">📅</div>
+        <h2 class="chapter-title">Votre semaine <em>type.</em></h2>
+      </div>
+      <div class="content">
+        <p>Voici à quoi ressemble une semaine type pour un pratiquant qui démarre et applique les 3 modules Fondations.</p>
+
+        <div class="table-wrap">
+          <table class="table-clean">
+            <tr><th>Jour</th><th>Matin</th><th>Soir</th></tr>
+            <tr><td><strong style="color:var(--gold)">Lundi</strong></td><td>Petit-déj protéiné + marche 15 min</td><td><strong>Séance A</strong> · Étirements · Coucher 22h30</td></tr>
+            <tr><td><strong style="color:var(--gold)">Mardi</strong></td><td>Marche 20 min</td><td>Récup active · Journaling</td></tr>
+            <tr><td><strong style="color:var(--gold)">Mercredi</strong></td><td>Mobilité 5 min</td><td><strong>Séance B</strong> · Étirements · Suspension</td></tr>
+            <tr><td><strong style="color:var(--gold)">Jeudi</strong></td><td>Routine habituelle</td><td>Repos total · Coucher 22h00</td></tr>
+            <tr><td><strong style="color:var(--gold)">Vendredi</strong></td><td>Routine habituelle</td><td><strong>Séance A ou B</strong></td></tr>
+            <tr><td><strong style="color:var(--gold)">Samedi</strong></td><td>Marche plus longue (45 min)</td><td>Moment social sans excès</td></tr>
+            <tr><td><strong style="color:var(--gold)">Dimanche</strong></td><td>Repos, préparation repas</td><td>Yoga doux ou lecture</td></tr>
+          </table>
+        </div>
+
+        <div class="callout">
+          <div class="callout-title">Les 5 non-négociables</div>
+          <p>✓ Minimum <strong>7h de sommeil</strong>/nuit<br>
+          ✓ Minimum <strong>3 repas équilibrés</strong>/jour<br>
+          ✓ Minimum <strong>3 litres d'eau</strong>/jour<br>
+          ✓ Minimum <strong>2 séances de musculation</strong>/semaine<br>
+          ✓ Minimum <strong>5 min de respiration/décompression</strong>/jour</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- CTA FINAL — Modèle copier-coller (contact direct)            -->
+    <!-- ========================================================== -->
+    <section class="reveal" id="cta">
+      <div class="cta-box">
+        <span class="cta-box-icon">🎁</span>
+        <h2>Votre bilan <em>offert.</em></h2>
+        <p class="cta-box-sub">40 minutes au studio · Valeur 63 € · Sans engagement</p>
+
+        <ul class="cta-checks">
+          <li>Évaluation posturale et mobilité</li>
+          <li>Test de niveau et charges adaptées à vous</li>
+          <li>Analyse de composition corporelle</li>
+          <li>Audit de vos habitudes (sommeil, nutrition, stress)</li>
+          <li>Plan d'action personnalisé sur les 4 prochaines semaines</li>
+        </ul>
+
+        <!-- Bloc copier-coller -->
+        <div class="copy-block">
+          <div class="copy-block-intro">
+            <span class="tag-pill">Pour réserver, c'est simple</span>
+            <p class="copy-block-lead">Copiez le message ci-dessous et envoyez-le moi par <strong>WhatsApp</strong>, <strong>SMS</strong> ou <strong>email</strong>. Je vous rappelle <strong>sous 24h</strong> pour fixer votre créneau.</p>
+          </div>
+
+          <div class="copy-message" id="copyMessage">
+            <div class="copy-message-text" id="copyText">Bonjour, je souhaite réserver un bilan. — <span style="color:var(--gold)">[Votre prénom]</span></div>
+            <button class="copy-btn" onclick="copyMessageToClipboard()" id="copyBtn">
+              <span class="copy-btn-default">📋 Copier le message</span>
+              <span class="copy-btn-success">✓ Copié !</span>
+            </button>
+          </div>
+
+          <p class="copy-block-hint">Puis envoyez-le ici :</p>
+
+          <div class="copy-channels">
+            <a href="https://wa.me/594694221799?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20bilan.%20%E2%80%94%20" target="_blank" rel="noopener" class="copy-channel whatsapp" onclick="trackContactClick('whatsapp')">
+              <span class="copy-channel-icon">💬</span>
+              <span class="copy-channel-label">WhatsApp</span>
+              <span class="copy-channel-sub">Réponse la plus rapide</span>
+            </a>
+            <a href="sms:+594694221799?body=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20bilan.%20%E2%80%94%20" class="copy-channel sms" onclick="trackContactClick('sms')">
+              <span class="copy-channel-icon">📱</span>
+              <span class="copy-channel-label">SMS</span>
+              <span class="copy-channel-sub">06 94 22 17 99</span>
+            </a>
+            <a href="mailto:strongstudio-kourou@outlook.fr?subject=R%C3%A9servation%20bilan%20StrongStudio&body=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20bilan.%20%E2%80%94%20" class="copy-channel email" onclick="trackContactClick('email')">
+              <span class="copy-channel-icon">✉</span>
+              <span class="copy-channel-label">Email</span>
+              <span class="copy-channel-sub">strongstudio-kourou@outlook.fr</span>
+            </a>
+          </div>
+
+          <p class="copy-block-or">— ou appelez-moi directement —</p>
+
+          <a href="tel:0694221799" class="copy-phone" onclick="trackContactClick('phone')">
+            <span class="copy-phone-icon">📞</span>
+            <span>06 94 22 17 99</span>
+          </a>
+        </div>
+
+        <div class="cta-location">Place de l'Horloge · Kourou · Guyane</div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- ============================================================ -->
+<!-- CTA FLOTTANT MOBILE — Pointe vers le bloc copier-coller       -->
+<!-- ============================================================ -->
+<a href="#cta" class="cta-floating">🎁 Je veux mon bilan offert</a>
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                         -->
+<!-- ============================================================ -->
+<footer class="footer-site">
+  Pierre-Antoine Martini · StrongStudio Kourou · Guyane · 2026
+</footer>
+
+<script>
+// ============================================================
+// MENU MOBILE
+// ============================================================
+const menuToggle = document.getElementById('menuToggle');
+const sidenav = document.getElementById('sidenav');
+const navBackdrop = document.getElementById('navBackdrop');
+
+function openMenu(){
+  sidenav.classList.add('open');
+  navBackdrop.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeMenu(){
+  sidenav.classList.remove('open');
+  navBackdrop.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+menuToggle.addEventListener('click', () => {
+  if(sidenav.classList.contains('open')) closeMenu();
+  else openMenu();
+});
+navBackdrop.addEventListener('click', closeMenu);
+
+// Fermer le menu quand on clique sur un lien (mobile)
+sidenav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    if(window.innerWidth <= 900) closeMenu();
+  });
+});
+
+// ============================================================
+// SCROLLSPY — highlight section active dans la nav
+// ============================================================
+const sections = document.querySelectorAll('section[id], div[id]');
+const navLinks = document.querySelectorAll('.sidenav a');
+
+function updateActiveNav(){
+  const scrollPos = window.scrollY + 150;
+  let currentSection = '';
+
+  sections.forEach(section => {
+    const top = section.offsetTop;
+    const height = section.offsetHeight;
+    if(scrollPos >= top && scrollPos < top + height){
+      currentSection = section.id;
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if(link.getAttribute('href') === '#' + currentSection){
+      link.classList.add('active');
+    }
+  });
+}
+
+let ticking = false;
+window.addEventListener('scroll', () => {
+  if(!ticking){
+    requestAnimationFrame(() => {
+      updateActiveNav();
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
+updateActiveNav();
+
+// ============================================================
+// REVEAL ANIMATIONS on scroll (Intersection Observer)
+// ============================================================
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('in-view');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -80px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ============================================================
+// COPIER-COLLER — Copie le message dans le presse-papier
+// ============================================================
+function copyMessageToClipboard(){
+  const textEl = document.getElementById('copyText');
+  // Récupérer le texte brut sans l'accent couleur
+  const text = 'Bonjour, je souhaite réserver un bilan. — [Votre prénom]';
+  const btn = document.getElementById('copyBtn');
+
+  // Méthode moderne (navigator.clipboard) avec fallback
+  if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(text).then(() => {
+      showCopySuccess(btn);
+    }).catch(() => fallbackCopy(text, btn));
+  } else {
+    fallbackCopy(text, btn);
+  }
+
+  // Tracking
+  if(typeof fbq !== 'undefined'){
+    fbq('track', 'Lead', {
+      content_name: 'Copy Booking Message',
+      content_category: 'guide_copy_cta'
+    });
+  }
+  if(typeof gtag !== 'undefined'){
+    gtag('event', 'copy_booking_message', { method: 'clipboard' });
+  }
+}
+
+function fallbackCopy(text, btn){
+  const textarea = document.createElement('textarea');
+  textarea.value = text;
+  textarea.style.position = 'fixed';
+  textarea.style.opacity = '0';
+  document.body.appendChild(textarea);
+  textarea.select();
+  try { document.execCommand('copy'); showCopySuccess(btn); }
+  catch(e) { alert('Impossible de copier automatiquement. Message à copier :\n\n' + text); }
+  document.body.removeChild(textarea);
+}
+
+function showCopySuccess(btn){
+  btn.classList.add('copied');
+  setTimeout(() => btn.classList.remove('copied'), 2500);
+}
+
+// ============================================================
+// TRACKING — Clics sur les canaux de contact
+// ============================================================
+function trackContactClick(channel){
+  if(typeof fbq !== 'undefined'){
+    fbq('track', 'Contact', {
+      content_name: 'Bilan Contact Click',
+      content_category: channel
+    });
+  }
+  if(typeof gtag !== 'undefined'){
+    gtag('event', 'contact_click', { channel: channel });
+  }
+}
+
+// ============================================================
+// TRACKING — Ancienne fonction conservée pour rétrocompatibilité
+// (déclenchée par le header CTA et le CTA flottant mobile)
+// ============================================================
+function trackBilanClick(source){
+  if(typeof fbq !== 'undefined'){
+    fbq('track', 'ViewContent', {
+      content_name: 'Bilan Section View',
+      content_category: source || 'cta_scroll'
+    });
+  }
+  if(typeof gtag !== 'undefined'){
+    gtag('event', 'bilan_section_view', { source: source || 'unknown' });
+  }
+}
+</script>
+
+</body>
+</html>
