@@ -12,6 +12,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
+<!-- Preload du hero (WebP en priorité, mobile + desktop) -->
+<link rel="preload" as="image" href="photo01-mobile.webp" type="image/webp" media="(max-width: 768px)" fetchpriority="high">
+<link rel="preload" as="image" href="photo01.webp" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
+
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -401,7 +405,12 @@ footer p{margin-bottom:.5rem}
 <!-- HERO avec photo en FOND PLEIN ÉCRAN -->
 <section class="hero">
   <div class="hero-img">
-    <img src="photo01.jpg" fetchpriority="high" alt="Coaching StrongStudio Kourou — kettlebell training">
+    <picture>
+      <source media="(max-width: 768px)" srcset="photo01-mobile.webp" type="image/webp">
+      <source media="(max-width: 768px)" srcset="photo01-mobile.jpg" type="image/jpeg">
+      <source srcset="photo01.webp" type="image/webp">
+      <img src="photo01.jpg" width="1200" height="798" fetchpriority="high" alt="Coaching StrongStudio Kourou — kettlebell training">
+    </picture>
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-stripe"></div>
@@ -446,7 +455,10 @@ footer p{margin-bottom:.5rem}
 <!-- HUMAN BREAK (sourire) -->
 <div class="human-break">
   <div class="human-break-inner">
-    <img src="photo05.jpg" loading="lazy" alt="Cliente StrongStudio souriante après séance">
+    <picture>
+      <source srcset="photo05.webp" type="image/webp">
+      <img src="photo05.jpg" width="1200" height="900" loading="lazy" alt="Cliente StrongStudio souriante après séance">
+    </picture>
     <p class="human-break-caption">Parce que l'énergie revient bien avant que le corps ne change.</p>
   </div>
 </div>
@@ -467,8 +479,14 @@ footer p{margin-bottom:.5rem}
       <div class="problem-card"><span class="problem-num">06</span><h3>Renforcer la confiance en soi</h3><p>Le corps et la tête avancent ensemble, jamais l'un sans l'autre.</p></div>
     </div>
     <div class="problem-illus">
-      <img src="photo10.jpg" loading="lazy" alt="Entraînement assault bike StrongStudio">
-      <img src="photo16.jpg" loading="lazy" alt="Pompes sur fitball StrongStudio">
+      <picture>
+        <source srcset="photo10.webp" type="image/webp">
+        <img src="photo10.jpg" width="1200" height="1600" loading="lazy" alt="Entraînement assault bike StrongStudio">
+      </picture>
+      <picture>
+        <source srcset="photo16.webp" type="image/webp">
+        <img src="photo16.jpg" width="1067" height="1600" loading="lazy" alt="Pompes sur fitball StrongStudio">
+      </picture>
     </div>
     <p class="problem-quote">Vous n'avez pas besoin d'être en forme pour commencer.<span>Vous avez juste besoin de vouloir aller mieux.</span></p>
   </div>
@@ -526,7 +544,10 @@ footer p{margin-bottom:.5rem}
     </div>
 
     <div class="testim-proof">
-      <img src="photo08.jpg" loading="lazy" alt="Transformations réelles clientes StrongStudio Kourou">
+      <picture>
+        <source srcset="photo08.webp" type="image/webp">
+        <img src="photo08.jpg" width="960" height="960" loading="lazy" alt="Transformations réelles clientes StrongStudio Kourou">
+      </picture>
       <p class="testim-proof-caption">Transformations réelles · Clientes StrongStudio Kourou</p>
     </div>
 
